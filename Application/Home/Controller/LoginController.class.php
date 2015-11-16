@@ -9,7 +9,11 @@ namespace Home\Controller;
 use Think\Controller;
 class LoginController extends Controller {
     public function index(){
-        $this->display("/index");
+        if(session('?username')){
+            $this->display("Index/index");
+        }else {
+            $this->display("Index/signin");
+        }
 //        echo 123;
     }
 
