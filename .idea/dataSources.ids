@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="SQLite -" uuid="89ee2421-3b9c-4b1a-8482-c105d230d17f">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="activity" schema="" catalog="" type="TABLE">
+      <column name="activity_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="img_url" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="enter_amount" sqlType="INTERGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="post_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="begin_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="end_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="is_end" sqlType="BOOLEAN" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <primary-key columns="activity_id"/>
+      <exported-key name="#FAKE_r_activity_user_1" table="r_activity_user" schema="" catalog="" columns="activity_id"/>
+    </table>
+    <table name="advice" schema="" catalog="" type="TABLE">
+      <column name="aid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="qid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="content" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="to_user" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="from_user" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="aid"/>
+      <foreign-key name="#FAKE_advice_1" columns="qid" ref-table="question" ref-schema="" ref-catalog="" ref-columns="qid" update-rule="3" delete-rule="0" deferrability="1"/>
+    </table>
+    <table name="base_info" schema="" catalog="" type="TABLE">
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="height" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <column name="weight" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <column name="BMI" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <column name="enter_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="exercise_amount" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="exercise_goal" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="slumber_amount" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <foreign-key name="#FAKE_base_info_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+    </table>
+    <table name="exercise_info" schema="" catalog="" type="TABLE">
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="date" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="step_number" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="info" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <foreign-key name="#FAKE_exercise_info_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+    </table>
+    <table name="question" schema="" catalog="" type="TABLE">
+      <column name="qid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="to_user" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="qid"/>
+      <foreign-key name="#FAKE_question_1" columns="to_user" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+      <foreign-key name="#FAKE_question_2" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+      <exported-key name="#FAKE_advice_1" table="advice" schema="" catalog="" columns="qid"/>
+    </table>
+    <table name="r_activity_user" schema="" catalog="" type="TABLE">
+      <column name="activity_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <foreign-key name="#FAKE_r_activity_user_1" columns="activity_id" ref-table="activity" ref-schema="" ref-catalog="" ref-columns="activity_id" update-rule="3" delete-rule="0" deferrability="1"/>
+      <foreign-key name="#FAKE_r_activity_user_2" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+    </table>
+    <table name="relation" schema="" catalog="" type="TABLE">
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="service_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <foreign-key name="#FAKE_relation_1" columns="service_id" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+      <foreign-key name="#FAKE_relation_2" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+    </table>
+    <table name="slumber_info" schema="" catalog="" type="TABLE">
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="date" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="begin_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="end_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="slumber_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="info" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <foreign-key name="#FAKE_slumber_info_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+    </table>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="user" schema="" catalog="" type="TABLE">
+      <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="id" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="identify" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="sign" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="gender" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="birthday" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="icon_url" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <exported-key name="#FAKE_base_info_1" table="base_info" schema="" catalog="" columns="uid"/>
+      <exported-key name="#FAKE_exercise_info_1" table="exercise_info" schema="" catalog="" columns="uid"/>
+      <exported-key name="#FAKE_question_1" table="question" schema="" catalog="" columns="to_user"/>
+      <exported-key name="#FAKE_question_2" table="question" schema="" catalog="" columns="uid"/>
+      <exported-key name="#FAKE_r_activity_user_2" table="r_activity_user" schema="" catalog="" columns="uid"/>
+      <exported-key name="#FAKE_relation_1" table="relation" schema="" catalog="" columns="service_id"/>
+      <exported-key name="#FAKE_relation_2" table="relation" schema="" catalog="" columns="uid"/>
+      <exported-key name="#FAKE_slumber_info_1" table="slumber_info" schema="" catalog="" columns="uid"/>
+    </table>
+  </data-source>
+</component>
