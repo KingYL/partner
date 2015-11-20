@@ -11,7 +11,8 @@ use Think\Controller;
 class LoginController extends Controller {
     public function index(){
         if(session('?userId')){
-            $this->display("Index/index");
+            $Index = new IndexController();
+            $Index->index();
         }else {
             $this->display("Index/signin");
         }
@@ -28,6 +29,7 @@ class LoginController extends Controller {
         $condition['id'] = $id;
         $result  = $User->where($condition)->select();
         if($result[0] && $result[0]["password"] == $password){
+            $this->assign("user", $result[0]);
             $this->display("Index/index");
             session("userId",$result[0]["uid"]);
         }else{
@@ -52,5 +54,9 @@ class LoginController extends Controller {
         }else {
             $this->error("注册失败！",5);
         }
+    }
+
+    public function signOut(){
+        session("userId", null);
     }
 }

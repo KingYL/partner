@@ -14,6 +14,12 @@ class UserModel extends Model {
 
     public function getUserInfo($uid){
         $userTable = M('user');
+        $condition["uid"] = $uid;
+        return $userTable->where($condition)->select();
+    }
 
+    public function updateUser($userInfo){
+        $userTable = M("user");
+        $userTable->save();
     }
 }

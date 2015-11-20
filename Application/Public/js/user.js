@@ -21,3 +21,63 @@ function validateForm(form){
         return false;
     }
 }
+
+function saveUserInfo(){
+    var userInfo = new Array();
+    userInfo.name = document.getElementById("name").value;
+    var gender = document.getElementsByName("gender");
+    if(gender[0].checked){
+        userInfo.gender = "女";
+    }else if(gender[1].checked){
+        userInfo.gender = "男";
+    }else{
+        userInfo.gender = "";
+    }
+    userInfo.birthday = document.getElementById("birthday").value;
+    userInfo.email = document.getElementById("email").value;
+    userInfo.sign = document.getElementById("sign").value;
+
+    console.log(userInfo);
+    var uid = getCookie("userId");
+
+    $.post(url + "/User/save", {
+        name:userInfo.name,
+        gender:userInfo.gender,
+        birthday:userInfo.birthday,
+        email:userInfo.email,
+        sign:userInfo.sign,
+        uid:uid
+    }, function (data) {
+        if(data == 1){
+            alert("保存成功！");
+        }else {
+            alert("保存失败，请检查网络连接！");
+        }
+    });
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');    //把cookie分割成组
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];                      //取得字符串
+        while (c.charAt(0)==' ') {          //判断一下字符串有没有前导空格
+            c = c.substring(1,c.length);      //有的话，从第二位开始取
+        }
+        if (c.indexOf(nameEQ) == 0) {       //如果含有我们要的name
+            return unescape(c.substring(nameEQ.length,c.length));    //解码并截取我们要值
+        }
+    }
+    return false;
+}
+
+function initGender(){
+    var gender = document.getElementsByName("gender");
+    console.log(gender[0].value);
+    if(gender[0].value == "女"){
+        gender[0].checked = true;
+    }
+    if(gender[1].value == "男"){
+        gender[1].checked = true;
+    }
+}

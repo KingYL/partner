@@ -8,8 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- //for-mobile-apps -->
+    <script>
+        function setCookie(){
+            document.cookie = "userId={$user.uid}";
+        }
+    </script>
 </head>
-<body>
+<body onload="setCookie()">
 <!-- header -->
 <div class="header navbar-fixed-top">
     <div class="container">
@@ -38,12 +43,12 @@
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     <span><img src="images/img2.jpg" alt=""></span>
-                                    七秒悲伤
+                                    {$user.name}
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="user.html">账户设置</a></li>
-                                    <li><a href="#">退出登录</a></li>
+                                    <li><a href="{:U('User/user')}">账户设置</a></li>
+                                    <li><a href="{:U('Login/signOut')}">退出登录</a></li>
                                 </ul>
                             </div>
                         </li>
