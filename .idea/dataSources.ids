@@ -93,6 +93,7 @@
       <column name="email" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <column name="birthday" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <column name="icon_url" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="uid"/>
       <exported-key name="#FAKE_base_info_1" table="base_info" schema="" catalog="" columns="uid"/>
       <exported-key name="#FAKE_exercise_info_1" table="exercise_info" schema="" catalog="" columns="uid"/>
       <exported-key name="#FAKE_question_1" table="question" schema="" catalog="" columns="to_user"/>

@@ -10,12 +10,11 @@ use Home\Model\UserModel;
 use Think\Controller;
 class LoginController extends Controller {
     public function index(){
-        if(session('?username')){
+        if(session('?userId')){
             $this->display("Index/index");
         }else {
             $this->display("Index/signin");
         }
-//        echo 123;
     }
 
     public function signUp(){
@@ -27,11 +26,13 @@ class LoginController extends Controller {
         $password = $_POST['password'];
         $User = M('user');
         $condition['id'] = $id;
-//        $condition['password'] = $password;
         $result  = $User->where($condition)->select();
-//        var_dump($result);
-        $this->ajaxReturn($condition);
-//        print_r($condition);
+        if($result[0] && $result[0]["password"] == $password){
+            $this->display("Index/index");
+            session("userId",$result[0]["uid"]);
+        }else{
+            $this->error("登录失败！请确认用户名或密码！");
+        }
     }
 
     public function register(){
@@ -46,6 +47,10 @@ class LoginController extends Controller {
         $data['email'] = I('email');
         $data['birthday'] = I('birthday');
         $data['icon_url'] = I('icon_url');
-        return $userModel->addUser($data);
+        if($userModel->addUser($data)){
+            $this->success("注册成功！","index",5);
+        }else {
+            $this->error("注册失败！",5);
+        }
     }
 }
