@@ -11,59 +11,14 @@
     <script>
         function setCookie(){
             document.cookie = "userId={$user.uid}";
+            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[0];
+            nav.setAttribute("class",nav.getAttribute("class").concat(" active"))
         }
     </script>
 </head>
 <body onload="setCookie()">
 <!-- header -->
-<div class="header navbar-fixed-top">
-    <div class="container">
-        <div class="header-left">
-            <a href="index.html">你的“伙伴”</a>
-        </div>
-        <div class="navigation">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">按钮导航</span>
-                        <span class="icon-bar"> </span>
-                        <span class="icon-bar"> </span>
-                        <span class="icon-bar"> </span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="hvr-bounce-to-bottom active"><a href="index.html">首页 </a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="health.html">健康管理</a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="activity.html">活动</a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="advice.html">建议</a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="contact.html">待定</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    <span><img src="images/img2.jpg" alt=""></span>
-                                    {$user.name}
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="{:U('User/user')}">账户设置</a></li>
-                                    <li><a href="{:U('Login/signOut')}">退出登录</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-        </div>
-
-        <div class="clearfix"></div>
-
-    </div>
-
-</div>
+<include file="Application/Public/tpl/header.html" />
 <!-- //header -->
 
 <div class="main" style="margin-top: 130px">
@@ -72,10 +27,10 @@
             <div class="cntnt-img">
             </div>
             <div class="bnr-img">
-                <img src="images/img2.jpg" alt=""/>
+                <img src="__PUBLIC__/data/{$user.icon_url}" alt="user_icon"/>
             </div>
             <div class="bnr-text">
-                <h1>七秒悲伤</h1>
+                <h1>{$user.name}</h1>
                 <h5>www.qq.com</h5>
             </div>
         </div>
@@ -88,21 +43,21 @@
                     <div class="circle circle-yellow">
                         <div class="blank35"></div>
                         <p>已运动</p>
-                        <p>30天</p>
+                        <p>{$user.exercise_amount}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="circle circle-blue">
                         <div class="blank35"></div>
-                        <p>累积里程</p>
-                        <p>12.8公里</p>
+                        <p>累积天数</p>
+                        <p>{$user.enter_time}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="circle circle-green">
                         <div class="blank35"></div>
                         <p>共燃烧</p>
-                        <p>500.14大卡</p>
+                        <p>{$user.exercise_amount}</p>
                     </div>
                 </div>
             </div>
@@ -151,50 +106,12 @@
     </div>
 </div>
 
-<div class="footer">
-    <div class="container">
-        <div class="footer-grids">
-            <div class="col-md-3 footer-grid">
-                <h4>地址</h4>
-                <ul>
-                    <li>南京大学——鼓楼校区</li>
-                    <li>陶园1舍</li>
-                    <li>230064</li>
-                    <li>Hours: Mon-Fri 9am - 6:00pm</li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h4>联系我们</h4>
-                <ul>
-                    <li>电话: +1 234-567-890</li>
-                    <li>传真: +1 646-216-9789</li>
-                    <li>邮件: <a href="mailto:info@example.com">1016990109@qq.com </a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h4>获得帮助</h4>
-
-                <form>
-                    <input type="email" value="输入你的邮箱" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
-                    <input type="submit" value=" ">
-                </form>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h3><a href="index.html">YOUR PARTNER</a></h3>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
-<!-- //footer -->
-<!-- copy -->
-<div class="copy-right">
-    <div class="container">
-        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="http://w3layouts.com/"> 洪传旺</a></p>
-    </div>
-</div>
-<!-- copy -->
+<!--footer-->
+<include file="Application/Public/tpl/footer.html" />
+<!--//footer-->
+<!--copy-right-->
+<include file="Application/Public/tpl/copy-right.html" />
+<!--//copy-right-->
 
 <!-- for bootstrap working -->
 <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>

@@ -1,13 +1,14 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+use Home\Model\UserModel;
+class IndexController extends CommonController {
 
     public function index(){
-        $User = M("user");
-        $condition["uid"] = session("userId");
-        $userInfo = $User->where($condition)->select();
-        $this->assign("user", $userInfo[0]);
+        $userModel = new UserModel();
+        $userInfo = $userModel->getUserInfo(session("userId"));
+        $this->assign("user", $userInfo);
         $this->display("Index/index");
+//        var_dump($userInfo);
     }
 }

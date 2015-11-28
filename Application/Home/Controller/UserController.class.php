@@ -4,15 +4,14 @@ use Home\Model\UserModel;
 use Think\Controller;
 use Think\Upload;
 
-class UserController extends Controller {
+class UserController extends CommonController {
     public function index(){
         $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover,{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
     }
 
     public function user(){
-        $User = M("user");
-        $condition["uid"] = session("userId");
-        $userInfo = $User->where($condition)->select();
+        $userModel = new UserModel();
+        $userInfo = $userModel->getUserInfo(session("userId"));
         $this->assign("user", $userInfo[0]);
         $this->display("Index/user");
     }
@@ -25,7 +24,7 @@ class UserController extends Controller {
         $userInfo["sign"] = $_POST["sign"];
         $userInfo["uid"] = $_POST["uid"];
         $userModel = new UserModel();
-        $this->ajaxReturn($userModel->save($userInfo));
+        $this->ajaxReturn($userModel->updateUser($userInfo));
     }
 
     public function uploadIcon(){
@@ -39,6 +38,10 @@ class UserController extends Controller {
         if(!$info) {// 上传错误提示错误信息
             $this->error($upload->getError());
         }else{// 上传成功
+            $userInfo["uid"] = session("userId");
+            $userInfo["icon_url"] = $info["icon_url"]['savepath'].$info["icon_url"]['savename'];
+            $userModel = new UserModel();
+            $userModel->updateUser($userInfo);
             $this->success('上传成功！');
         }
     }

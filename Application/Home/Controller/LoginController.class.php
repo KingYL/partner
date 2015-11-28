@@ -10,12 +10,7 @@ use Home\Model\UserModel;
 use Think\Controller;
 class LoginController extends Controller {
     public function index(){
-        if(session('?userId')){
-            $Index = new IndexController();
-            $Index->index();
-        }else {
-            $this->display("Index/signin");
-        }
+        $this->display("Index/signin");
     }
 
     public function signUp(){
@@ -29,9 +24,9 @@ class LoginController extends Controller {
         $condition['id'] = $id;
         $result  = $User->where($condition)->select();
         if($result[0] && $result[0]["password"] == $password){
-            $this->assign("user", $result[0]);
-            $this->display("Index/index");
+//            $this->assign("user", $result[0]);
             session("userId",$result[0]["uid"]);
+            $this->redirect("Index/index");
         }else{
             $this->error("登录失败！请确认用户名或密码！");
         }
@@ -58,5 +53,6 @@ class LoginController extends Controller {
 
     public function signOut(){
         session("userId", null);
+        $this->redirect("Login/index");
     }
 }

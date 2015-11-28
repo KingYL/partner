@@ -1,0 +1,48 @@
+<div class="header navbar-fixed-top">
+    <div class="container">
+        <div class="header-left">
+            <a href="index.html">你的“伙伴”</a>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">按钮导航</span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="navbar-nav">
+                        <li class="hvr-bounce-to-bottom"><a href="{:U('Index/index')}">首页 </a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="{:U('Health/index')}">健康管理</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="{:U('Activity/index')}">活动</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="{:U('Advice/index')}">建议</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="{:U('Contact/index')}">待定</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span><img src="__PUBLIC__/data/{$user.icon_url}" alt=""></span>
+                                    {$user.name}
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="{:U('User/user')}">账户设置</a></li>
+                                    <li><a href="{:U('Login/signOut')}">退出登录</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+</div>
