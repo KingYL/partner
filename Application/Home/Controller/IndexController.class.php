@@ -9,6 +9,5 @@ class IndexController extends CommonController {
         $userInfo = $userModel->getUserInfo(session("userId"));
         $this->assign("user", $userInfo);
         $this->display("Index/index");
-//        var_dump($userInfo);
     }
 }

@@ -36,7 +36,7 @@ class UserModel extends Model {
         $baseInfo = $baseInfoTable->where($condition)->select();
         $userInfo["height"] = $baseInfo[0]["height"];
         $userInfo["weight"] = $baseInfo[0]["weight"];
-        $userInfo["BMI"] = $baseInfo[0]["BMI"];
+        $userInfo["BMI"] = $baseInfo[0]["bmi"];
         $userInfo["enter_time"] = $baseInfo[0]["enter_time"];
         $userInfo["exercise_amount"] = $baseInfo[0]["exercise_amount"];
         $userInfo["exercise_goal"] = $baseInfo[0]["exercise_goal"];

@@ -12,7 +12,7 @@ class UserController extends CommonController {
     public function user(){
         $userModel = new UserModel();
         $userInfo = $userModel->getUserInfo(session("userId"));
-        $this->assign("user", $userInfo[0]);
+        $this->assign("user", $userInfo);
         $this->display("Index/user");
     }
 

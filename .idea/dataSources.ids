@@ -36,6 +36,7 @@
       <column name="exercise_amount" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <column name="exercise_goal" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <column name="slumber_amount" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <primary-key columns="uid"/>
       <foreign-key name="#FAKE_base_info_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
     </table>
     <table name="exercise_info" schema="" catalog="" type="TABLE">

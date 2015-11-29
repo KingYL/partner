@@ -2,18 +2,21 @@
 <html>
 <head>
     <title>伙伴</title>
-    <!--fonts-->
-    <!--<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>-->
-    <!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
-    <!--//fonts-->
     <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- //for-mobile-apps -->
+    <script>
+        function setCookie(){
+            document.cookie = "userId={$user.uid}";
+            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
+            nav.setAttribute("class",nav.getAttribute("class").concat(" active"))
+        }
+    </script>
 </head>
-<body>
+<body onload="setCookie()">
 <!-- header -->
 <include file="Application/Public/tpl/header.html" />
 <!-- //header -->
@@ -40,7 +43,7 @@
             <div class="activities">
                 <div class="activity">
                     <div class="activity-img">
-                        <img src="images/banner.jpg" alt="浏览器不支持">
+                        <img src="__PUBLIC__/images/banner.jpg" alt="浏览器不支持">
                     </div>
                     <div class="activity-block">
                         <div class="activity-content">

@@ -33,8 +33,8 @@
                 <ul class="effct1" style="display: block;">
                     <li class="active m1"><a href="#overview" data-toggle="tab">我的运动</a></li>
                     <li class="m2"><a href="#health" data-toggle="tab">身体管理</a></li>
-                    <li class="m3"><a href="#exercise" data-toggle="tab">健身追踪器</a></li>
-                    <li class="m4"><a href="#slumber" data-toggle="tab">睡眠分析</a></li>
+                    <li class="m3" onclick="getExerciseInfo()"><a href="#exercise" data-toggle="tab">健身追踪器</a></li>
+                    <li class="m4" onclick="getSlumberInfo()"><a href="#slumber" data-toggle="tab">睡眠分析</a></li>
                 </ul>
                 <!-- script-for-menu -->
                 <script>
@@ -58,13 +58,13 @@
                         <div class="blank35"></div>
                         <p>"零夜"安眠</p>
 
-                        <p class="boler">0%</p>
+                        <p class="boler">{$user.slumber_time}</p>
                     </div>
                     <div class="circle circle-blue">
                         <div class="blank35"></div>
-                        <p>运动目标完成</p>
+                        <p>今天运动</p>
 
-                        <p class="boler">0%</p>
+                        <p class="boler">{$user.step_number}步</p>
                     </div>
                     <div class="circle circle-green">
                         <div class="blank35"></div>
@@ -79,10 +79,10 @@
                     </div>
                     <div>
                         <div class="people inline">
-                            <img src="images/people.png" alt=""/>
+                            <img src="__PUBLIC__/images/people.png" alt=""/>
                         </div>
                         <div class="inline middle-y">
-                            <canvas id = "myCanvas" width="100px">Canvas画线技巧</canvas>
+                            <canvas id = "myCanvas" width="100px">people-line</canvas>
                             <script>
                                 var myCanvas = document.getElementById("myCanvas");
                                 var context = myCanvas.getContext("2d");
@@ -101,19 +101,19 @@
                         </div>
                         <div class="inline middle-y" style="margin-left: -10px">
                             <div class="body-text">
-                                <label>身高：<input type="text"> 厘米</label>
+                                <label>身高：<input type="text" id="height" value="{$user.height}"> 厘米</label>
                             </div>
                             <div class="body-text">
-                                <label>体重：<input type="text"> 公斤</label>
+                                <label>体重：<input type="text" id="weight" value="{$user.weight}"> 公斤</label>
                             </div>
                             <div class="body-text">
-                                <button class="">保存</button>
+                                <button class="" onclick="saveBaseInfo()">保存</button>
                             </div>
                         </div>
                         <div class="circle circle-green">
                             <div class="blank35"></div>
                             <p>健康</p>
-                            <p class="bolder">BMI 20.7</p>
+                            <p class="bolder">BMI {$user.BMI}</p>
                         </div>
                     </div>
                     <div class="bmi-text col-md-7" style="float: right">
@@ -259,6 +259,8 @@
 </div>
 <div class="clearfix"></div>
 
+<include file="Application/Public/tpl/modal_success.html" />
+
 <!--footer-->
 <include file="Application/Public/tpl/footer.html" />
 <!--//footer-->
@@ -270,6 +272,7 @@
 <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/bootstrap.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/Chart.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/health.js"></script>
 <!-- //for bootstrap working -->
 </body>
 </html>
