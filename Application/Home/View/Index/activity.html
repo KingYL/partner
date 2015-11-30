@@ -37,88 +37,41 @@
             </div>
         </div>
 
+
         <div class="col-md-9">
             <h3 style="padding: 0 10px;font-weight: bold">最新活动</h3>
 
-            <div class="activities">
+            <volist name="list" id="vo" class="activities">
                 <div class="activity">
                     <div class="activity-img">
-                        <img src="__PUBLIC__/images/banner.jpg" alt="浏览器不支持">
+                        <img src="__PUBLIC__/data/activity/{$vo.img_url}" alt="浏览器不支持">
                     </div>
                     <div class="activity-block">
                         <div class="activity-content">
-                            <a href="#"><h4>活动1</h4></a>
-
-                            <p>活动1详情</p>
+                            <a href="#"><h4>{$vo.title}</h4></a>
+                            <p>{$vo.content}</p>
                         </div>
                         <!--<div class="clearfix"></div>-->
                         <div class="activity-state">
                             <div>
-                                <label>正在进行</label>
-                                <label>44444人参与</label>
+                                <label id="{$vo.activity_id}">{$vo.is_end}</label>
+                                <script>
+                                    var label = document.getElementById("{$vo.activity_id}");
+                                    if(label.innerHTML == 0){
+                                        label.innerHTML = "正在进行";
+                                    }else {
+                                        label.innerHTML = "已经结束";
+                                    }
+                                </script>
+                                <label>{$vo.enter_amount}人参与</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="activity">
-                    <div class="activity-img">
-                        <img src="images/banner.jpg" alt="浏览器不支持">
-                    </div>
-                    <div class="activity-block">
-                        <div class="activity-content">
-                            <h4>活动1</h4>
 
-                            <p>活动1详情</p>
-                        </div>
-                        <!--<div class="clearfix"></div>-->
-                        <div class="activity-state">
-                            <div>
-                                <label>正在进行</label>
-                                <label>44444人参与</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="activity">
-                    <div class="activity-img">
-                        <img src="images/banner.jpg" alt="浏览器不支持">
-                    </div>
-                    <div class="activity-block">
-                        <div class="activity-content">
-                            <h4>活动1</h4>
-
-                            <p>活动1详情</p>
-                        </div>
-                        <!--<div class="clearfix"></div>-->
-                        <div class="activity-state">
-                            <div>
-                                <label>正在进行</label>
-                                <label>44444人参与</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="activity">
-                    <div class="activity-img">
-                        <img src="images/banner.jpg" alt="浏览器不支持">
-                    </div>
-                    <div class="activity-block">
-                        <div class="activity-content">
-                            <h4>活动1</h4>
-
-                            <p>活动1详情</p>
-                        </div>
-                        <!--<div class="clearfix"></div>-->
-                        <div class="activity-state">
-                            <div>
-                                <label>正在进行</label>
-                                <label>44444人参与</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </volist>
             <nav class="page">
+                {$page}
                 <ul class="pagination">
                     <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
                     <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>

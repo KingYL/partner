@@ -21,7 +21,7 @@ define('APP_DEBUG',True);
 define('APP_PATH','./Application/');
 
 //define('BIND_MODULE','Admin');
-define('BIND_MODULE','Home');
+//define('BIND_MODULE','Home');
 define('BUILD_CONTROLLER_LIST','Index,User,Health,Activity,Advice');
 define('BUILD_MODEL_LIST','Index,User,Health,Activity,Advice');
 

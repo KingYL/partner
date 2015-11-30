@@ -18,7 +18,8 @@ class HealthController extends Controller {
         }
         $slumberInfo = $slumberInfoTable->where($condition)->select();
         if($slumberInfo[0]){
-            $userInfo["step_number"] = $slumberInfo[0]["slumber_time"];
+            $time = $slumberInfo[0]["slumber_time"];
+            $userInfo["slumber_time"] = (int)($time/60)."小时".($time - (int)($time/60)*60)."分";
         }else {
             $userInfo["slumber_time"] = "0小时0分";
         }
@@ -33,6 +34,17 @@ class HealthController extends Controller {
         $exerciseInfo = $exerciseInfoTable->where($condition)->select();
         if($exerciseInfo[0]) {
             $this->ajaxReturn($exerciseInfo[0]);
+        }
+        $this->ajaxReturn(0);
+    }
+
+    public function getSlumberInfo(){
+        $slumberInfoTable = M("slumber_info");
+        $condition["date"] = I("date");
+        $condition["uid"] = session("userId");
+        $slumberInfo = $slumberInfoTable->where($condition)->select();
+        if($slumberInfo[0]) {
+            $this->ajaxReturn($slumberInfo[0]);
         }
         $this->ajaxReturn(0);
     }

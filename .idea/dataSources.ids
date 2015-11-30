@@ -42,8 +42,12 @@
     <table name="exercise_info" schema="" catalog="" type="TABLE">
       <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <column name="date" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="complete_goal" sqlType="DOUBLE" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
       <column name="step_number" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
-      <column name="info" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="meters" sqlType="INT" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="calories" sqlType="REAL&#xa;  STEPS TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="steps" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="exercise_duration" sqlType="INT" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <foreign-key name="#FAKE_exercise_info_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
     </table>
     <table name="question" schema="" catalog="" type="TABLE">
@@ -77,6 +81,7 @@
       <column name="end_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <column name="slumber_time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <column name="info" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="effective_rate" sqlType="REAL" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
       <foreign-key name="#FAKE_slumber_info_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
     </table>
     <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
