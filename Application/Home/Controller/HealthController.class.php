@@ -57,4 +57,11 @@ class HealthController extends Controller {
         $baseInfo["BMI"] = number_format($baseInfo["weight"]/pow($baseInfo["height"]/100,2),1);
         $this->ajaxReturn($baseInfoTable->save($baseInfo));
     }
+
+    public function saveExerciseGoal(){
+        $baseInfoTable = M("base_info");
+        $baseInfo["uid"] = session("userId");
+        $baseInfo["exercise_goal"] = I("goal");
+        $this->ajaxReturn($baseInfoTable->save($baseInfo));
+    }
 }

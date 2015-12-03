@@ -1,7 +1,7 @@
 /**
  * Created by 传旺 on 2015/11/18.
  */
-var url = "http://localhost/partner/index.php";
+var url = "http://localhost/partner/index.php/Home";
 
 
 function validateForm(form){
@@ -49,10 +49,11 @@ function saveUserInfo(){
         uid:uid
     }, function (data) {
         if(data == 1){
-            alert("保存成功！");
+            document.getElementsByClassName("modal-body")[0].innerHTML = "申请成功！";
         }else {
-            alert("保存失败，请检查网络连接！");
+            document.getElementsByClassName("modal-body")[0].innerHTML = "申请失败！是否已经申请过？";
         }
+        $("#myModal").modal("show");
     });
 }
 

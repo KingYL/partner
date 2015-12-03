@@ -17,6 +17,13 @@
             document.cookie = "userId={$user.uid}";
             var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[1];
             nav.setAttribute("class",nav.getAttribute("class").concat(" active"));
+            initialDate();
+            //script-for-menu
+            $("span.menu2").click(function () {
+                $("ul.effct1").slideToggle(300, function () {
+                    // Animation complete.
+                });
+            });
         }
     </script>
 </head>
@@ -36,15 +43,6 @@
                     <li class="m3" onclick="getExerciseInfo()"><a href="#exercise" data-toggle="tab">健身追踪器</a></li>
                     <li class="m4" onclick="getSlumberInfo()"><a href="#slumber" data-toggle="tab">睡眠分析</a></li>
                 </ul>
-                <!-- script-for-menu -->
-                <script>
-                    $("span.menu2").click(function () {
-                        $("ul.effct1").slideToggle(300, function () {
-                            // Animation complete.
-                        });
-                    });
-                </script>
-                <!-- /script-for-menu -->
             </div>
         </div>
 
@@ -141,8 +139,8 @@
                 <div class="tab-pane fade in" id="exercise">
                     <div class="title">
                         <p>健身追踪</p>
-                        <label>每天运动目标：<input type="text" value="{$user.exercise_goal}步">
-                            <button>更改</button>
+                        <label>每天运动目标：<input type="text" id="exercise_goal" value="{$user.exercise_goal}步">
+                            <button onclick="saveExerciseGoal()">更改</button>
                         </label>
                     </div>
                     <div class="blank35"></div>
@@ -176,10 +174,13 @@
                         </div>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="title-2">
-                        <p>运动曲线:</p>
+                    <div class="date-div">
+                        <label for="date">日期：</label><input type="date" id="exercise_date" class="date" onchange="updateExerciseInfo()">
                     </div>
-                    <canvas id="exerciseChart" width="850" height="400"></canvas>
+                    <div class="title-2">
+                        <p>运动曲线:<span id="exerciseGot"></span></p>
+                    </div>
+                    <canvas id="exerciseChart" width="850" height="0"></canvas>
                 </div>
                 <div class="tab-pane fade in" id="slumber">
                     <div class="title">
@@ -217,10 +218,13 @@
                         </div>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="title-2">
-                        <p>睡眠分析:</p>
+                    <div class="date-div">
+                        <label for="date">日期：</label><input type="date" id="slumber_date" class="date" onchange="updateSlumberInfo()">
                     </div>
-                    <canvas id="slumberChart" width="800" height="400"></canvas>
+                    <div class="title-2">
+                        <p>睡眠分析:<span id="slumberGot"></span></p>
+                    </div>
+                    <canvas id="slumberChart" width="800" height="0"></canvas>
                 </div>
             </div>
         </div>

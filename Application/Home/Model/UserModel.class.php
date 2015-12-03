@@ -48,4 +48,9 @@ class UserModel extends Model {
         $userTable = M("user");
         return $userTable->save($userInfo);
     }
+
+    public function search($condition){
+        $userTable = M("user");
+        return $userTable->where($condition)->select();
+    }
 }

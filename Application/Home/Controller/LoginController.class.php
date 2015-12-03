@@ -38,16 +38,19 @@ class LoginController extends Controller {
         $data['id'] = I('id');
         $data['password'] = I('password');
         $data['name'] = I('name');
-        $data['identity'] = I('identity');
+        $data['identify'] = "普通用户";
         $data['sign'] = I('sign');
         $data['gender'] = I('gender');
         $data['email'] = I('email');
         $data['birthday'] = I('birthday');
         $data['icon_url'] = I('icon_url');
-        if($userModel->addUser($data)){
-            $this->success("注册成功！","index",5);
-        }else {
-            $this->error("注册失败！",5);
+        try{
+            $userModel->addUser($data);
+            $this->success("注册成功！","index",3);
+        }catch(\Exception $e){
+            if($e->getCode()==23000){
+                $this->error("注册失败！","signUp",2);
+            }
         }
     }
 

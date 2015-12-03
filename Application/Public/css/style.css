@@ -643,6 +643,21 @@ path {
     color: #666666;
 }
 
+#exercise .title label input {
+    width: 70px;
+}
+
+input.date {
+    border-radius: 5px;
+    height: 30px;
+}
+
+.date-div {
+    font-size: 1.2em;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
 /*-- //myTabContent*/
 
 /*-- activity--*/
@@ -851,15 +866,14 @@ path {
 .list-item li {
 }
 
-#my_question {
+.my_question {
     width: 100%;
-    /*margin: 5px 5px;*/
     border-radius: 5px;
     border-color: #78be09;
     padding: 5px 10px;
 }
 
-#my_question:focus {
+.my_question:focus {
     border-color: #78be09;
     outline: none;
 }
@@ -916,7 +930,7 @@ path {
     border-radius: 5px;
     border: 1px solid #78be09;
 }
-.search form input[type="submit"] {
+.search form input[type="button"] {
     background: url(../images/search.png) no-repeat 10px 12px;
     width: 43px;
     height: 38px;

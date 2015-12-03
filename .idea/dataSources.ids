@@ -53,13 +53,11 @@
     <table name="question" schema="" catalog="" type="TABLE">
       <column name="qid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
-      <column name="to_user" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <column name="title" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <column name="content" sqlType="TEXT" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <column name="time" sqlType="TIMESTAMP" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
       <primary-key columns="qid"/>
-      <foreign-key name="#FAKE_question_1" columns="to_user" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
-      <foreign-key name="#FAKE_question_2" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
+      <foreign-key name="#FAKE_question_1" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
       <exported-key name="#FAKE_advice_1" table="advice" schema="" catalog="" columns="qid"/>
     </table>
     <table name="r_activity_user" schema="" catalog="" type="TABLE">
@@ -71,6 +69,7 @@
     <table name="relation" schema="" catalog="" type="TABLE">
       <column name="uid" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
       <column name="service_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <primary-key columns="uid,service_id"/>
       <foreign-key name="#FAKE_relation_1" columns="service_id" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
       <foreign-key name="#FAKE_relation_2" columns="uid" ref-table="user" ref-schema="" ref-catalog="" ref-columns="uid" update-rule="3" delete-rule="0" deferrability="1"/>
     </table>
@@ -102,8 +101,7 @@
       <primary-key columns="uid"/>
       <exported-key name="#FAKE_base_info_1" table="base_info" schema="" catalog="" columns="uid"/>
       <exported-key name="#FAKE_exercise_info_1" table="exercise_info" schema="" catalog="" columns="uid"/>
-      <exported-key name="#FAKE_question_1" table="question" schema="" catalog="" columns="to_user"/>
-      <exported-key name="#FAKE_question_2" table="question" schema="" catalog="" columns="uid"/>
+      <exported-key name="#FAKE_question_1" table="question" schema="" catalog="" columns="uid"/>
       <exported-key name="#FAKE_r_activity_user_2" table="r_activity_user" schema="" catalog="" columns="uid"/>
       <exported-key name="#FAKE_relation_1" table="relation" schema="" catalog="" columns="service_id"/>
       <exported-key name="#FAKE_relation_2" table="relation" schema="" catalog="" columns="uid"/>
