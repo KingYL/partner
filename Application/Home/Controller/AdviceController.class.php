@@ -8,9 +8,10 @@ class AdviceController extends Controller {
         $userInfo = $userModel->getUserInfo(session("userId"));
         $this->assign("user",$userInfo);
         if($userInfo["identify"] != "普通用户"){
-
+            $this->display("Index/advice_service");
+        }else {
+            $this->display("Index/advice");
         }
-        $this->display("Index/advice");
     }
 
     public function getQuestions(){
@@ -19,8 +20,25 @@ class AdviceController extends Controller {
         $this->ajaxReturn($questionTable->where($questionCond)->select());
     }
 
-    public function getAdvices(){
+    public function getServiceQuestions(){
+        $relationTable = M("relation");
+        $condition["service_id"] = session("userId");
+        $questions = $relationTable->where($condition)->join("question ON relation.uid=question.uid")->join("user ON question.uid=user.uid")->select();
+        $this->ajaxReturn($questions);
+    }
 
+    public function getServiceAdvices(){
+        $adviceTable = M("advice");
+        $condition["from_user"] = session("userId");
+        $advices = $adviceTable->where($condition)->query("SELECT Q.title,A.content,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid;");
+        $this->ajaxReturn($advices);
+    }
+
+    public function getAdvices(){
+        $adviceTable = M("advice");
+        $condition["to_user"] = session("userId");
+        $advices = $adviceTable->where($condition)->query("SELECT Q.title,A.content,U.name,U.identify,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid JOIN user as U ON A.from_user=U.uid");
+        $this->ajaxReturn($advices);
     }
 
     public function question(){
@@ -34,6 +52,20 @@ class AdviceController extends Controller {
             $this->ajaxReturn(1);
         }catch (\Exception $e){
             exit(0);
+        }
+    }
+
+    public function replyQuestion(){
+        $adviceTable = M("advice");
+        $advice["qid"] = I("qid");
+        $advice["content"] = I("content");
+        $advice["to_user"] = I("to_user");
+        $advice["from_user"] = session("userId");
+        $advice["time"] = date("Y-m-d H:i:s");
+        try{
+            $this->ajaxReturn($adviceTable->add($advice));
+        }catch (\Exception $e){
+            $this->ajaxReturn(0);
         }
     }
 }

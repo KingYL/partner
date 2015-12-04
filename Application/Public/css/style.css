@@ -191,9 +191,10 @@ ul {
 }
 
 .dropdown button,button:hover,button:focus,button:active {
-    background-color: #DAE5C5 !important;
-    color: #63960b !important;
+    /*background-color: #DAE5C5 !important;*/
     font-weight: bold;
+    /*border:1px solid #ddd !important;*/
+    border: 1px solid rgba(188, 255, 61, 0.76) !important;
 }
 
 .dropdown img {
@@ -863,7 +864,14 @@ input.date {
     list-style: none;
 }
 
-.list-item li {
+.list-item button {
+    color: white;
+    background-color: #78be09;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-top: -2px;
+    margin-left: 10px;
+    float: right;
 }
 
 .my_question {
@@ -1125,3 +1133,20 @@ margin: 20px 20px;
 }
 
 /*-- //footer --*/
+
+/*-- modal --*/
+.modal-body button {
+    color: white;
+    background-color: #78be09;
+    border: 1px solid #fff;
+    padding: 2px 4px;
+    font-weight: bold;
+    border-radius: 3px;
+    float: right;
+    margin-left: 10px;
+}
+
+.modal-body p {
+    font-size: 1.1em;
+}
+/*-- //modal --*/

@@ -95,10 +95,6 @@ function getMyCoaches(){
     );
 }
 
-function getMyAdvices(){
-
-}
-
 function getMyQuestions(){
     $.post(
         "getQuestions",
@@ -152,4 +148,169 @@ function question(){
             $("#myModal").modal("show");
         }
     );
+}
+
+function getAdvices(){
+    $.post(
+        "getAdvices",
+        {},
+        function(data){
+            console.log(data);
+            var advices = document.getElementById("advices");
+            advices.innerHTML = "";
+            for(var i = 0; i < data.length; i++){
+                var adviceUnit = getAdviceUnit(data[i]["title"],data[i]["content"],data[i]["name"],data[i]["identify"],data[i]["time"]);
+                advices.appendChild(adviceUnit);
+            }
+        }
+    );
+}
+
+function getAdviceUnit(question_title,answer_content,name,identify,time){
+    var li = document.createElement("li");
+    li.className = "list-item";
+    var question = document.createElement("div");
+    question.className = "question";
+    var ques_p = document.createElement("p");
+    ques_p.innerHTML = "<span>提问：</span>" + question_title;
+    question.appendChild(ques_p);
+    var answer = document.createElement("div");
+    answer.className = "answer";
+    var ans_p = document.createElement("p");
+    ans_p.innerHTML = "<span>提问：</span>" + answer_content;
+    var offer = document.createElement("div");
+    offer.className = "offer";
+    offer.innerHTML = "<h4>" + name + "<span class='badge'>" + identify + "</span></h4>";
+    var offer_time = document.createElement("div");
+    offer_time.className = "offer-time";
+    offer_time.innerHTML = time;
+    answer.appendChild(ans_p);
+    answer.appendChild(offer);
+    answer.appendChild(offer_time);
+    li.appendChild(question);
+    li.appendChild(document.createElement("hr"));
+    li.appendChild(answer);
+    return li;
+}
+
+
+//service_user function
+
+function getUsers(){
+    $.post(
+        "../User/getMyServiceUsers",
+        {},
+        function(data){
+            var doctors = document.getElementById("myDoctors");
+            doctors.innerHTML = "";
+            for(var i = 0; i < data.length; i++) {
+                var doctorUnit = getDoctorUnit(data[i]["uid"],data[i]["icon_url"],data[i]["name"],data[i]["identify"],data[i]["sign"],"查看用户详情>>",null);
+                doctors.appendChild(doctorUnit);
+            }
+        }
+    );
+}
+
+function getServiceQuestions(){
+    $.post(
+        "getServiceQuestions",
+        {},
+        function (data) {
+            var myQuestions = document.getElementById("myQuestions");
+            myQuestions.innerHTML = "";
+            for(var i = 0; i < data.length; i++){
+                var questionUnit = getServiceQuestionUnit(data[i]["uid"],data[i]["qid"],data[i]["title"],data[i]["content"],data[i]["time"],data[i]["name"]);
+                myQuestions.appendChild(questionUnit);
+            }
+        }
+    );
+}
+
+function getServiceQuestionUnit(uid,qid,title,content,time,userName){
+    var li = document.createElement("li");
+    li.className = "list-item";
+    var question = document.createElement("question");
+    question.className = "question";
+    var ques_p = document.createElement("p");
+    ques_p.innerHTML = "<span>标题：</span>" + title;
+    question.appendChild(ques_p);
+    var question_content = document.createElement("div");
+    question_content.className = "question-content";
+    question_content.innerHTML = "<hr><div>" + content + "</div><br>"
+    var offer_time = document.createElement("div");
+    offer_time.className = "offer-time";
+    offer_time.innerHTML = userName + " <span>发表于 </span> " + time;
+    question_content.appendChild(offer_time);
+    var button = document.createElement("button");
+    button.innerHTML = "回复";
+    button.onclick = function(){
+        document.getElementById("reply_btn").value = qid;
+        document.getElementById("reply_title").title = uid;//
+        $("#reply_modal").modal("show");
+    };
+    var clearfix = document.createElement("div");
+    clearfix.className = "clearfix";
+    offer_time.appendChild(button);
+    offer_time.appendChild(clearfix);
+    li.appendChild(question);
+    li.appendChild(question_content);
+    return li;
+}
+
+function replyQuestion(qid){
+    var to_user = document.getElementById("reply_title").title;
+    var reply_content = document.getElementById("reply").value;
+    if(reply_content == ""){
+        document.getElementById("warning").style.display = "block";
+        return;
+    }
+    $.post(
+        "replyQuestion",
+        {qid:qid,to_user:to_user,content:reply_content},
+        function(data){
+            if(data){
+
+            }else{
+                alert("回复失败！");
+            }
+        }
+    );
+}
+
+function getServiceAdvices(){
+    $.post(
+        "getServiceAdvices",
+        {},
+        function(data){
+            var advices = document.getElementById("advices");
+            advices.innerHTML = "";
+            for(var i = 0; i < data.length; i++){
+                var adviceUnit = getServiceAdviceUnit(data[i]["title"],data[i]["content"],data[i]["time"]);
+                advices.appendChild(adviceUnit);
+            }
+        }
+    );
+}
+
+function getServiceAdviceUnit(question_title,answer_content,time){
+    var li = document.createElement("li");
+    li.className = "list-item";
+    var question = document.createElement("div");
+    question.className = "question";
+    var ques_p = document.createElement("p");
+    ques_p.innerHTML = "<span>提问：</span>" + question_title;
+    question.appendChild(ques_p);
+    var answer = document.createElement("div");
+    answer.className = "answer";
+    var ans_p = document.createElement("p");
+    ans_p.innerHTML = "<span>提问：</span>" + answer_content;
+    var offer_time = document.createElement("div");
+    offer_time.className = "offer-time";
+    offer_time.innerHTML = time;
+    answer.appendChild(ans_p);
+    answer.appendChild(offer_time);
+    li.appendChild(question);
+    li.appendChild(document.createElement("hr"));
+    li.appendChild(answer);
+    return li;
 }

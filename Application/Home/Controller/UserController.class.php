@@ -76,7 +76,24 @@ class UserController extends CommonController {
         $relation = $relationTable->where($relationCond)->select();
         foreach($relation as $relCell){
             $userCond["uid"] = $relCell["service_id"];
-            $userCond["identify"] = I("type");;
+            $userCond["identify"] = I("type");
+            $user = $userModel->where($userCond)->select();
+            if($user[0]){
+                $result[] = $user[0];
+            }
+        }
+        $this->ajaxReturn($result);
+    }
+
+    public function getMyServiceUsers(){
+        $relationTable = M("relation");
+        $userModel = new UserModel();
+        $result = array();
+        $relationCond["service_id"] = session("userId");
+        $relation = $relationTable->where($relationCond)->select();
+        foreach($relation as $relCell){
+            $userCond["uid"] = $relCell["uid"];
+            $userCond["identify"] = "普通用户";
             $user = $userModel->where($userCond)->select();
             if($user[0]){
                 $result[] = $user[0];

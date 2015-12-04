@@ -40,7 +40,7 @@
                 <ul class="effct1" style="display: block;">
                     <li class="active m5" onclick="getMyDoctors()"><a href="#doctor" data-toggle="tab">我的医生</a></li>
                     <li class="m6" onclick="getMyCoaches()"><a href="#coach" data-toggle="tab">我的教练</a></li>
-                    <li class="m7" onclick="getMyAdvices()"><a href="#advice_list" data-toggle="tab">我的建议</a></li>
+                    <li class="m7" onclick="getAdvices()"><a href="#advice_list" data-toggle="tab">我的建议</a></li>
                     <li class="m8" onclick="getMyQuestions()"><a href="#question_list" data-toggle="tab">我的提问</a></li>
                     <li class="m9"><a href="#search" data-toggle="tab">搜索</a></li>
                 </ul>
@@ -87,7 +87,8 @@
                 <div class="tab-pane fade" id="advice_list">
                     <h2>伙伴建议</h2>
                     <hr>
-                    <li class="list-item">
+                    <div id="advices">
+                        <li class="list-item">
                             <div class="question">
                                 <p><span>提问：</span>请问怎么高效减肥？</p>
                             </div>
@@ -103,54 +104,7 @@
                                 </div>
                             </div>
                         </li>
-                    <li class="list-item">
-                            <div class="question">
-                                <p><span>提问：</span>请问怎么高效减肥？</p>
-                            </div>
-                            <hr>
-                            <div class="answer">
-                                <p><span>建议：</span>减肥一般可以早上运动</p>
-                                <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                                <div class="offer">
-                                    <h4>七秒悲伤<span class="badge">医生</span></h4>
-                                </div>
-                                <div class="offer-time">
-                                    2015/10/22 19:22
-                                </div>
-                            </div>
-                        </li>
-                    <li class="list-item">
-                            <div class="question">
-                                <p><span>提问：</span>请问怎么高效减肥？</p>
-                            </div>
-                            <hr>
-                            <div class="answer">
-                                <p><span>建议：</span>减肥一般可以早上运动</p>
-                                <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                                <div class="offer">
-                                    <h4>七秒悲伤<span class="badge">医生</span></h4>
-                                </div>
-                                <div class="offer-time">
-                                    2015/10/22 19:22
-                                </div>
-                            </div>
-                        </li>
-                    <li class="list-item">
-                            <div class="question">
-                                <p><span>提问：</span>请问怎么高效减肥？</p>
-                            </div>
-                            <hr>
-                            <div class="answer">
-                                <p><span>建议：</span>减肥一般可以早上运动</p>
-                                <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                                <div class="offer">
-                                    <h4>七秒悲伤<span class="badge">医生</span></h4>
-                                </div>
-                                <div class="offer-time">
-                                    2015/10/22 19:22
-                                </div>
-                            </div>
-                        </li>
+                    </div>
                     <nav class="page">
                         <ul class="pagination">
                             <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>

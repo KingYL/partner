@@ -23,7 +23,7 @@
                     // Animation complete.
                 });
             });
-            getMyDoctors();
+            getUsers();
         }
     </script>
 </head>
@@ -38,11 +38,9 @@
             <div class="top-nav2">
                 <span class="menu2"><img src="__PUBLIC__/images/menu.png" alt=""> <lable>伙伴建议</lable></span>
                 <ul class="effct1" style="display: block;">
-                    <li class="active m5" onclick="getMyDoctors()"><a href="#doctor" data-toggle="tab">我的医生</a></li>
-                    <li class="m6" onclick="getMyCoaches()"><a href="#coach" data-toggle="tab">我的教练</a></li>
-                    <li class="m7" onclick="getMyAdvices()"><a href="#advice_list" data-toggle="tab">我的建议</a></li>
-                    <li class="m8" onclick="getMyQuestions()"><a href="#question_list" data-toggle="tab">我的提问</a></li>
-                    <li class="m9"><a href="#search" data-toggle="tab">搜索</a></li>
+                    <li class="active m5" onclick="getUsers()"><a href="#doctor" data-toggle="tab">我的用户</a></li>
+                    <li class="m7" onclick="getServiceAdvices()"><a href="#advice_list" data-toggle="tab">我的建议</a></li>
+                    <li class="m8" onclick="getServiceQuestions()"><a href="#question_list" data-toggle="tab">用户提问</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +48,7 @@
         <div class="col-md-9">
             <div id="advice" class="tab-content">
                 <div class="tab-pane fade in active" id="doctor">
-                    <h2>医疗专家</h2>
+                    <h2>我的用户</h2>
                     <hr>
                     <div class="doctors" id="doctors">
                         <div id="myDoctors"></div>
@@ -66,91 +64,27 @@
                         </nav>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="coach">
-                    <h2>专业教练</h2>
-                    <hr>
-                    <div class="doctors">
-                        <div id="myCoaches"></div>
-                        <nav class="page">
-                            <ul class="pagination">
-                                <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
-                                <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                            </ul>
-                        </nav>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
                 <div class="tab-pane fade" id="advice_list">
-                    <h2>伙伴建议</h2>
+                    <h2>我给出的建议</h2>
                     <hr>
-                    <li class="list-item">
-                        <div class="question">
-                            <p><span>提问：</span>请问怎么高效减肥？</p>
-                        </div>
-                        <hr>
-                        <div class="answer">
-                            <p><span>建议：</span>减肥一般可以早上运动</p>
-                            <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                            <div class="offer">
-                                <h4>七秒悲伤<span class="badge">医生</span></h4>
+                    <div id="advices">
+                        <li class="list-item">
+                            <div class="question">
+                                <p><span>提问：</span>请问怎么高效减肥？</p>
                             </div>
-                            <div class="offer-time">
-                                2015/10/22 19:22
+                            <hr>
+                            <div class="answer">
+                                <p><span>建议：</span>减肥一般可以早上运动</p>
+                                <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
+                                <div class="offer">
+                                    <h4>七秒悲伤<span class="badge">医生</span></h4>
+                                </div>
+                                <div class="offer-time">
+                                    2015/10/22 19:22
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <div class="question">
-                            <p><span>提问：</span>请问怎么高效减肥？</p>
-                        </div>
-                        <hr>
-                        <div class="answer">
-                            <p><span>建议：</span>减肥一般可以早上运动</p>
-                            <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                            <div class="offer">
-                                <h4>七秒悲伤<span class="badge">医生</span></h4>
-                            </div>
-                            <div class="offer-time">
-                                2015/10/22 19:22
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <div class="question">
-                            <p><span>提问：</span>请问怎么高效减肥？</p>
-                        </div>
-                        <hr>
-                        <div class="answer">
-                            <p><span>建议：</span>减肥一般可以早上运动</p>
-                            <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                            <div class="offer">
-                                <h4>七秒悲伤<span class="badge">医生</span></h4>
-                            </div>
-                            <div class="offer-time">
-                                2015/10/22 19:22
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <div class="question">
-                            <p><span>提问：</span>请问怎么高效减肥？</p>
-                        </div>
-                        <hr>
-                        <div class="answer">
-                            <p><span>建议：</span>减肥一般可以早上运动</p>
-                            <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                            <div class="offer">
-                                <h4>七秒悲伤<span class="badge">医生</span></h4>
-                            </div>
-                            <div class="offer-time">
-                                2015/10/22 19:22
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    </div>
                     <nav class="page">
                         <ul class="pagination">
                             <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
@@ -164,14 +98,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="tab-pane fade" id="question_list">
-                    <h2>我的提问</h2>
-                    <hr>
-                    <div class="question-input">
-                        <textarea class="my_question" name="question_title" placeholder="标题" id="new_question_title" cols="20" rows="1"></textarea>
-                        <textarea class="my_question" name="question_content" placeholder="发表新的问题" id="new_question_content" cols="40" rows="5"></textarea>
-                        <button style="float: right" onclick="question()">发表</button>
-                        <div class="clearfix"></div>
-                    </div>
+                    <h2>用户提问</h2>
                     <hr>
                     <div id="myQuestions"></div>
                     <nav class="page">
@@ -186,19 +113,6 @@
                     </nav>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="search">
-                    <h2>搜索你要的</h2>
-                    <hr>
-                    <div class="search">
-                        <form>
-                            <input type="search" id="searchName" placeholder="搜索你想要的">
-                            <input type="button" onclick="searchUser()">
-                        </form>
-                        <div id="result">
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -206,6 +120,7 @@
 
 <!--modal-->
 <include file="Application/Public/tpl/modal_success.html" />
+<include file="Application/Public/tpl/reply_modal.html" />
 <!--//modal-->
 <!--footer-->
 <include file="Application/Public/tpl/footer.html" />
