@@ -16,7 +16,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 .bnr-img {
     left: 26%;
-    top: 15%;
+    top: 30%;
     display: inline-block;
     position: absolute;
     border: 12px solid rgba(255, 255, 255, 0.53);
@@ -190,7 +190,14 @@ ul {
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.dropdown button,button:hover,button:focus,button:active {
+.dropdown button{
+    background-color: #DAE5C5 !important;
+    font-weight: bold;
+    border:1px solid #ddd !important;
+    /*border: 1px solid rgba(188, 255, 61, 0.76) !important;*/
+}
+
+button,button:hover,button:focus,button:active {
     /*background-color: #DAE5C5 !important;*/
     font-weight: bold;
     /*border:1px solid #ddd !important;*/
@@ -219,6 +226,86 @@ ul {
 }
 
 /*-- //header --*/
+
+/*-- sort --*/
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-left: 2em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded-list {
+    font-size: 1.5em;
+}
+
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 1em;
+    /**padding: .4em;*/
+    margin: .5em 0;
+    /*background: #ddd;*/
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list a img{
+    width: 30px;
+    height: 30px;
+}
+
+.rounded-list a span {
+    font-size: 0.8em;
+    padding-left: 0.6em;
+    color: #63960b;
+}
+
+.rounded-list a:hover{
+    background: #eee;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1em;
+    background: #63c61d;
+    color: white;
+    height: 2em;
+    width: 2em;
+    /*line-height: 2em;*/
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list li:nth-child(1) a:before {
+    background: #ff6464;
+}
+
+.rounded-list li:nth-child(2) a:before {
+    background: #bbc3ff;
+}
+
+.rounded-list li:nth-child(3) a:before {
+    background: #ecec0d;
+}
+
+/*-- //sort --*/
 
 /*-- summary --*/
 .summary {
@@ -665,15 +752,35 @@ input.date {
 .announce {
     height: 400px;
     background-color: #dafaa6;
-    border: 5px solid #dfffa8;
+    border: 1px solid #dfffa8;
     border-radius: 10px;
     margin-top: 35px;
+    padding: 0;
+}
+
+.announce .title {
+    background: url("../images/green.png");
+    color: white;
+    font-weight: bold;
+    font-family: "楷体";
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .announce-list {
     font-size: 15px;
     font-weight: bold;
     padding: 10px;
+}
+
+.announce-list ul {
+    list-style: none;
+}
+
+.announce hr {
+    margin: 0;
+    padding: 0 !important;
 }
 
 .activities {

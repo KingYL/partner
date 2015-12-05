@@ -49,9 +49,9 @@ function saveUserInfo(){
         uid:uid
     }, function (data) {
         if(data == 1){
-            document.getElementsByClassName("modal-body")[0].innerHTML = "申请成功！";
+            document.getElementsByClassName("modal-body")[0].innerHTML = "保存成功！";
         }else {
-            document.getElementsByClassName("modal-body")[0].innerHTML = "申请失败！是否已经申请过？";
+            document.getElementsByClassName("modal-body")[0].innerHTML = "保存失败！";
         }
         $("#myModal").modal("show");
     });

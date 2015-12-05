@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>伙伴</title>
+    <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- //for-mobile-apps -->
+    <script>
+        function setCookie() {
+            document.cookie = "userId={$user.uid}";
+            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
+            nav.setAttribute("class", nav.getAttribute("class").concat(" active"))
+        }
+    </script>
+</head>
+<body onload="setCookie()">
+<!-- header -->
+<include file="Application/Public/tpl/header.html"/>
+<!-- //header -->
+
+<div class="main" style="margin-top: 130px">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2" id="myTabContent">
+            <br>
+
+            <h3 style="padding: 0 10px;font-weight: bold;color: #78be09">{$activity.title}</h3>
+
+            <p style="text-align: right;color: #636486">发表于 {$activity.post_time}</p>
+            <hr>
+            <div>
+                <img src="__PUBLIC__/data/activity/{$activity.img_url}" alt="图片丢失"
+                     style="width: 50%;height: auto;border-radius: 10px">
+            </div>
+            <hr>
+            <div style="color: #7aa92f;margin-top: -10px;">
+                <p>开始时间：{$activity.begin_time}</p>
+                <p>结束时间：{$activity.end_time}</p>
+            </div>
+            <p style="font-size: 1.2em;">&nbsp&nbsp&nbsp&nbsp{$activity.content}</p>
+
+            <div style="float: right;">
+                <button id="{$activity.activity_id}" style="background-color: #78be09;color: white">
+                    {$activity.is_enter}
+                </button>
+                <script>
+                    var label = document.getElementById("{$activity.activity_id}");
+                    var activity_id = "{$activity.activity_id}";
+                    if (label.innerHTML == 0) {
+                        label.innerHTML = "点击参加";
+                        label.onclick = function(){
+                            $.post(
+                                    "/partner/index.php/Home/Activity/enterActivity",
+                                    {activity_id:activity_id},
+                                    function(data){
+                                        if(data){
+                                            location.reload();
+                                        }else{
+                                            alert("参与失败！");
+                                        }
+                                    }
+                            );
+                        }
+                    } else {
+                        label.innerHTML = "退出活动";
+                        label.style.backgroundColor = "#ccc";
+                        label.onclick = function(){
+                            $.post(
+                                    "/partner/index.php/Home/Activity/exitActivity",
+                                    {activity_id:activity_id},
+                                    function(data){
+                                        if(data){
+                                            location.reload();
+                                        }else{
+                                            alert("参与失败！");
+                                        }
+                                    }
+                            );
+                        }
+                    }
+                </script>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+<include file="Application/Public/tpl/footer.html"/>
+<!--//footer-->
+<!--copy-right-->
+<include file="Application/Public/tpl/copy-right.html"/>
+<!--//copy-right-->
+
+<!-- for bootstrap working -->
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+</body>
+</html>

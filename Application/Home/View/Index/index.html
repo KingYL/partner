@@ -24,6 +24,7 @@
 <div class="main" style="margin-top: 130px">
     <div class="container">
         <div class="col-md-4">
+            <div style="height: 80px;;"></div>
             <div class="cntnt-img">
             </div>
             <div class="bnr-img">
@@ -43,21 +44,25 @@
                     <div class="circle circle-yellow">
                         <div class="blank35"></div>
                         <p>已运动</p>
-                        <p>{$user.exercise_amount}</p>
+                        <p>{$user.exercise_amount}天</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="circle circle-blue">
                         <div class="blank35"></div>
-                        <p>累积天数</p>
-                        <p>{$user.enter_time}</p>
+                        <p>已加入</p>
+                        <p id="enter_time">{$user.enter_time}</p>
+                        <script>
+                            var enter_time = document.getElementById("enter_time");
+                            enter_time.innerHTML = parseInt((new Date().getTime() - new Date(enter_time.innerHTML).getTime())/(24 * 60 * 60 * 1000)) + "天";
+                        </script>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="circle circle-green">
                         <div class="blank35"></div>
                         <p>共燃烧</p>
-                        <p>{$user.exercise_amount}</p>
+                        <p>{$user.exercise_amount}千卡</p>
                     </div>
                 </div>
             </div>
@@ -66,37 +71,35 @@
                 <ul id="myTab" class="nav nav-tabs">
                     <li class="active" style="width: 33.3%">
                         <a href="#home" data-toggle="tab">
-                            全站
+                            总排名
                         </a>
                     </li>
-                    <li style="width: 33.3%"><a href="#ios" data-toggle="tab">动态</a></li>
-                    <li class="dropdown" style="width: 33.3%">
-                        <a href="#" id="myTabDrop1" class="dropdown-toggle"
-                           data-toggle="dropdown">健康
-                            <b class="caret"></b>
+                    <li style="width: 33.3%">
+                        <a href="#ios" data-toggle="tab">
+                            朋友排名
                         </a>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-                            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
-                            <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
-                        </ul>
                     </li>
                 </ul>
                 <div id="myTabCon" class="tab-content">
                     <div class="tab-pane fade in active" id="home">
-                        <p>
-                            W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+                        <ol class="rounded-list">
+                            <li><a href=""><img src="__PUBLIC__/images/team-1.jpg" alt="1"><span>七秒悲伤</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/333.jpg" alt="1"><span>西风残照之伤</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/222.jpg" alt="1"><span>暗红</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/111.jpg" alt="1"><span>方正电脑5</span></a></li>
+                        </ol>
                     </div>
                     <div class="tab-pane fade" id="ios">
-                        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
-                            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
-                    </div>
-                    <div class="tab-pane fade" id="jmeter">
-                        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
-                    </div>
-                    <div class="tab-pane fade" id="ejb">
-                        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE
-                            上。
-                        </p>
+                        <ol class="rounded-list">
+                            <li><a href=""><img src="__PUBLIC__/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/333.jpg" alt="1"><span>呵呵哒</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
+                            <li><a href=""><img src="__PUBLIC__/images/team-1.jpg" alt="1"><span>暗红</span></a></li>
+                        </ol>
                     </div>
                 </div>
             </div>

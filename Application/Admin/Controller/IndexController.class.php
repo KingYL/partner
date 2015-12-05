@@ -21,8 +21,10 @@ class IndexController extends Controller {
             $activity["img_url"] = $info["image"]['savepath'].$info["image"]['savename'];
             $activity["title"] = I("title");
             $activity["content"] = I("content");
-            $activity["post_time"] = date("Y-m-d");
+            $activity["post_time"] = date("Y-m-d H:i:s");
             $activity["is_end"] = 0;
+            $activity["begin_time"] = I("begin_time");
+            $activity["end_time"] = I("end_time");
             $activity["enter_amount"] = 0;
             $activityTable = M("activity");
             if($activityTable->add($activity)){
@@ -30,4 +32,21 @@ class IndexController extends Controller {
             }
         }
     }
+
+    public function new_activity(){
+        $this->display("Index/new_activity");
+    }
+
+    public function users(){
+        $this->display("Index/users");
+    }
+
+    public function apply(){
+        $this->display("Index/apply");
+    }
+
+    public function activities(){
+        $this->display("Index/activities");
+    }
+
 }

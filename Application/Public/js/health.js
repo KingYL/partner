@@ -47,6 +47,7 @@ function getExerciseInfo(){
                 ]
             }
             ctx.height = 400;
+            ctx.width = 800;
             new Chart(ctx.getContext("2d")).Bar(steps);
             exerciseInfoGot = true;
         }
@@ -100,6 +101,7 @@ function getSlumberInfo(){
                 ]
             }
             ctx.height = 400;
+            ctx.width = 800;
             new Chart(ctx.getContext("2d")).Bar(slumber);
         }
     );

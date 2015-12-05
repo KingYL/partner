@@ -30,14 +30,14 @@ class AdviceController extends Controller {
     public function getServiceAdvices(){
         $adviceTable = M("advice");
         $condition["from_user"] = session("userId");
-        $advices = $adviceTable->where($condition)->query("SELECT Q.title,A.content,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid;");
+        $advices = $adviceTable->query("SELECT Q.title,A.content,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid WHERE A.from_user=".session("userId"));
         $this->ajaxReturn($advices);
     }
 
     public function getAdvices(){
         $adviceTable = M("advice");
         $condition["to_user"] = session("userId");
-        $advices = $adviceTable->where($condition)->query("SELECT Q.title,A.content,U.name,U.identify,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid JOIN user as U ON A.from_user=U.uid");
+        $advices = $adviceTable->query("SELECT Q.title,A.content,U.name,U.identify,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid JOIN user as U ON A.from_user=U.uid WHERE A.to_user=".session("userId"));
         $this->ajaxReturn($advices);
     }
 

@@ -133,6 +133,10 @@ function getQuestionUnit(title,content,time){
 function question(){
     var title = document.getElementById("new_question_title");
     var content = document.getElementById("new_question_content");
+    if(title.value == "" || content.value == ""){
+        alert("输入不能为空！");
+        return;
+    }
     $.post(
         "question",
         {title:title.value,content:content.value},
@@ -245,7 +249,10 @@ function getServiceQuestionUnit(uid,qid,title,content,time,userName){
     button.innerHTML = "回复";
     button.onclick = function(){
         document.getElementById("reply_btn").value = qid;
-        document.getElementById("reply_title").title = uid;//
+        document.getElementById("reply_title").title = uid;
+        document.getElementById("reply_title").innerHTML = title;
+        document.getElementById("reply_content").innerHTML = content;
+        document.getElementById("reply").value = "";
         $("#reply_modal").modal("show");
     };
     var clearfix = document.createElement("div");
@@ -269,7 +276,7 @@ function replyQuestion(qid){
         {qid:qid,to_user:to_user,content:reply_content},
         function(data){
             if(data){
-
+                $("#reply_modal").modal("hide");
             }else{
                 alert("回复失败！");
             }
