@@ -1,0 +1,29 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+body {
+  background-color: #555; }
+
+#panel {
+  color: #FFF;
+  font-size: 16px; }
+  #panel .title {
+    padding: 1em;
+    background-color: #888;
+    color: #FFF; }
+  #panel .item {
+    float: left;
+    width: 49%;
+    min-height: 3em;
+    padding: 1em;
+    margin: 1.5%;
+    border: solid 1px #FFF;
+    box-sizing: border-box;
+    background-color: #999;
+    box-shadow: 1px 2px 3px #000; }
+
+.test {
+  background-color: rgba(220, 111, 83, 0.85);
+  text-align: center; }
+
+/*# sourceMappingURL=print.css.map */
