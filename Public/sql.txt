@@ -1,0 +1,93 @@
+CREATE TABLE user(
+  uid integer primary key,
+  id text UNIQUE,
+  password text,
+  name text,
+  identify text,
+  sign text,
+  gender text,
+  email text,
+  birthday TIMESTAMP,
+  icon_url text
+);
+
+CREATE TABLE advice(
+ aid integer primary key,
+ qid integer,
+ content text,
+ to_user integer,
+ from_user integer,
+ time TIMESTAMP,
+ foreign key(qid) references question(qid) on delete cascade
+);
+
+CREATE TABLE question(
+ qid integer primary key,
+ uid integer,
+ title text,
+ content text,
+ time TIMESTAMP,
+ foreign key(uid) references user(uid) on delete cascade
+);
+
+CREATE TABLE relation(
+ uid integer,
+ service_id integer,
+ primary key(uid,service_id),
+ foreign key(uid) references user(uid) on delete cascade,
+ foreign key(service_id) references user(uid) on delete cascade
+);
+
+
+CREATE TABLE base_info(
+ uid integer,
+ height float,
+ weight float,
+ BMI float,
+ enter_time timestamp,
+ exercise_amount integer,
+ exercise_goal integer,
+ slumber_amount float,
+ foreign key(uid) references user(uid) on delete cascade
+);
+
+CREATE TABLE exercise_info(
+  uid integer,
+  date timestamp,
+  complete_goal double,
+  step_number integer,
+  meters int,
+  calories real,
+  steps text,
+  exercise_duration interger,
+  foreign key(uid) references user(uid) on delete cascade
+);
+
+CREATE TABLE slumber_info(
+ uid integer,
+ date timestamp,
+ begin_time timestamp,
+ end_time timestamp,
+ slumber_time timestamp,
+ info text,
+ foreign key(uid) references user(uid) on delete cascade
+);
+
+CREATE TABLE activity(
+ activity_id integer primary key,
+ title text,
+ content text,
+ img_url text,
+ enter_amount interger,
+ post_time timestamp,
+ begin_time timestamp,
+ end_time timestamp,
+ is_end boolean
+);
+
+CREATE TABLE r_activity_user(
+ activity_id integer,
+ uid integer,
+ foreign key(uid) references user(uid) on delete cascade,
+ foreign key(activity_id) references activity(activity_id) on delete cascade
+);
