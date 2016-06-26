@@ -113,7 +113,8 @@ class ActivityController extends CommonController {
         }
         $this->assign("activity",$activity);
 
-        $users = array();
+        $users = $userModel->getUserInActivity($activity["activity_id"]);
+        $this->users = $users;
         $this->display("Index/activity_unit");
     }
 

@@ -46,6 +46,14 @@
                     {$activity.is_enter}
                 </button>
             </div>
+
+            <volist name="users" id="user" offset="0" length='10'>
+                <a href="../../../User/user/userId/{$user.uid}">
+                    <img src="__PUBLIC__/data/{$user.avatar}" alt="" style="display:inline-block;border-radius:50px" width="40px" height="40px" >
+                </a>
+            </volist>
+
+            <p style="text-align:right">{:count($users) > 10 ? '等' : '共'} {:count($users)} 人参与</p>
         </div>
 
     </div>
