@@ -82,7 +82,7 @@ ul {
 
 /*-- header --*/
 .header {
-    background: #78be09;
+    background: #77B11B;
     padding: 0.5em 0;
 }
 
@@ -98,10 +98,15 @@ ul {
 }
 
 .navigation {
+    float: left;
+    margin-left: 10%;
+}
+.navigation, #navbar-nav-user {
     margin-top: 9px;
+}
+#navbar-nav-user {
     float: right;
 }
-
 .navbar-default {
     background: none;
     border: none;
@@ -131,6 +136,8 @@ ul {
     background: #477103;
 }
 
+
+
 /* Bounce To Bottom */
 .hvr-bounce-to-bottom {
     display: inline-block;
@@ -146,6 +153,7 @@ ul {
     transition-property: color;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+    margin-left: 1em;
 }
 
 .hvr-bounce-to-bottom:before {
@@ -811,7 +819,6 @@ input.date {
     color: #78be09;
     font-weight: 600;
     font-family: "Microsoft YaHei";
-    padding: 10px 20px;
 }
 
 .activity-content p {
@@ -1193,19 +1200,26 @@ margin: 20px 20px;
 
 .footer-grid ul li {
     list-style-type: none;
-    font-size: 14px;
+    font-size: 1.2em;
     color: #262324;
     line-height: 2em;
-    font-weight: 600;
 }
 
 .footer-grid ul li a {
     text-decoration: none;
-    color: #262324;
+    color: #eee;
 }
 
 .footer-grid ul li a:hover {
     color: #fff;
+}
+
+img.friend-logo {
+    width:36px;
+    height:24px;
+}
+
+ul.web-nav li {
 }
 
 .copy-right {
@@ -1246,5 +1260,3 @@ margin: 20px 20px;
 .modal-body p {
     font-size: 1.1em;
 }
-
-/*-- //modal --*/

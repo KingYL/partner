@@ -44,6 +44,16 @@ class UserModel extends Model {
         return $userInfo;
     }
 
+    public function getUserInActivity($activityId){
+		//TODO:sql safety
+        $queryStr = "SELECT user.uid uid, name nickname, icon_url avatar 
+					 FROM r_activity_user 
+						 LEFT JOIN user ON(r_activity_user.uid = user.uid) 
+					 WHERE activity_id = ".$activityId;
+		$users = M('user')->query($queryStr);
+        return $users;
+    }
+
     public function updateUser($userInfo){
         $userTable = M("user");
         return $userTable->save($userInfo);

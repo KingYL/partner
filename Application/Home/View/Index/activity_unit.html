@@ -36,13 +36,13 @@
             </div>
             <hr>
             <div style="color: #7aa92f;margin-top: -10px;">
-                <p>开始时间：{$activity.begin_time}</p>
-                <p>结束时间：{$activity.end_time}</p>
+                <p>开始时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['begin_time']))) ?></p>
+                <p>结束时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['end_time']))) ?></p>
             </div>
-            <p style="font-size: 1.2em;">&nbsp&nbsp&nbsp&nbsp{$activity.content}</p>
+            <p style="font-size: 1.5em; margin: 20px 0px">&nbsp&nbsp&nbsp&nbsp{$activity.content}</p>
 
-            <div style="float: right;">
-                <button id="{$activity.activity_id}" style="background-color: #78be09;color: white">
+            <div style="display:flex; justify-content:center;">
+                <button id="{$activity.activity_id}" class="btn btn-success" style="width: 40%; margin: 20px">
                     {$activity.is_enter}
                 </button>
                 <script>
@@ -51,6 +51,7 @@
                     if (label.innerHTML == 0) {
                         label.innerHTML = "点击参加";
                         label.onclick = function(){
+                            console.log('click');
                             $.post(
                                     "/partner/index.php/Home/Activity/enterActivity",
                                     {activity_id:activity_id},
@@ -65,7 +66,6 @@
                         }
                     } else {
                         label.innerHTML = "退出活动";
-                        label.style.backgroundColor = "#ccc";
                         label.onclick = function(){
                             $.post(
                                     "/partner/index.php/Home/Activity/exitActivity",
