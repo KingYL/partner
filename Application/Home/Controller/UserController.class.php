@@ -67,21 +67,24 @@ class UserController extends CommonController {
             }
         }
     }
-
+	
     public function getMyRelations(){
         $relationTable = M("relation");
         $userModel = new UserModel();
-        $result = array();
+		$page = $this->getPagePara();
         $relationCond["uid"] = session("userId");
-        $relation = $relationTable->where($relationCond)->select();
+		$result = pageQuery($relationTable->where($relationCond), $page, 10);
+        $relation = $result['datas'];
+		$datas = array();
         foreach($relation as $relCell){
             $userCond["uid"] = $relCell["service_id"];
             $userCond["identify"] = I("type");
             $user = $userModel->where($userCond)->select();
             if($user[0]){
-                $result[] = $user[0];
+                $datas[] = $user[0];
             }
         }
+		$result['datas'] = $datas;
         $this->ajaxReturn($result);
     }
 
@@ -101,4 +104,11 @@ class UserController extends CommonController {
         }
         $this->ajaxReturn($result);
     }
+	
+	public function getPagePara() {
+		$page = I('page');
+		if (!isset($page))
+			$page = 0;
+		return $page;
+	}
 }
