@@ -7,11 +7,14 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
     <!--//fonts-->
     <link href="/partner/Application/Public/css/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
     <link href="/partner/Application/Public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- //for-mobile-apps -->
+	<script type="text/javascript" src="/partner/Application/Public/js/util.js"></script>
     <script>
         function setCookie(){
             document.cookie = "userId=<?php echo ($user["uid"]); ?>";
@@ -108,15 +111,7 @@
                     <hr>
                     <div class="doctors" id="doctors">
                         <div id="myDoctors"></div>
-                        <nav class="page">
-                            <ul class="pagination">
-                                <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
-                                <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                            </ul>
+                        <nav class="page" id="doctorsPage">
                         </nav>
                     </div>
                 </div>
@@ -125,15 +120,7 @@
                     <hr>
                     <div class="doctors">
                         <div id="myCoaches"></div>
-                        <nav class="page">
-                            <ul class="pagination">
-                                <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
-                                <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                            </ul>
+                        <nav class="page" id="coachPage">
                         </nav>
                         <div class="clearfix"></div>
                     </div>
@@ -141,36 +128,13 @@
                 <div class="tab-pane fade" id="advice_list">
                     <h2>伙伴建议</h2>
                     <hr>
-                    <div id="advices">
-                        <li class="list-item">
-                            <div class="question">
-                                <p><span>提问：</span>请问怎么高效减肥？</p>
-                            </div>
-                            <hr>
-                            <div class="answer">
-                                <p><span>建议：</span>减肥一般可以早上运动</p>
-                                <!--<img src="images/img2.jpg" alt="浏览器不支持">-->
-                                <div class="offer">
-                                    <h4>七秒悲伤<span class="badge">医生</span></h4>
-                                </div>
-                                <div class="offer-time">
-                                    2015/10/22 19:22
-                                </div>
-                            </div>
-                        </li>
+                    <div class="doctors">
+                        <div id="advices"></div>
+                        <nav class="page" id="advicePage">
+                        </nav>
+                        <div class="clearfix"></div>
                     </div>
-                    <nav class="page">
-                        <ul class="pagination">
-                            <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
-                            <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                        </ul>
-                    </nav>
-                    <div class="clearfix"></div>
-                </div>
+				</div>
                 <div class="tab-pane fade" id="question_list">
                     <h2>我的提问</h2>
                     <hr>
@@ -182,15 +146,7 @@
                     </div>
                     <hr>
                     <div id="myQuestions"></div>
-                    <nav class="page">
-                        <ul class="pagination">
-                            <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
-                            <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                        </ul>
+                    <nav class="page" id="questionPage">
                     </nav>
                     <div class="clearfix"></div>
                 </div>
@@ -280,8 +236,6 @@
 <!--//copy-right-->
 
 <!-- for bootstrap working -->
-<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
 <script type="text/javascript" src="/partner/Application/Public/js/advice.js"></script>
 <!-- //for bootstrap working -->
 </body>

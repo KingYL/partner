@@ -40,6 +40,9 @@
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Health/index');?>">健康管理</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Home/Activity/index/p/1');?>">活动</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Advice/index');?>">建议</a></li>
+<<<<<<< HEAD
+                        <li class="hvr-bounce-to-bottom"><a href="#">待定</a></li>
+=======
                     </ul>
                     
                     <div class="clearfix"></div>
@@ -49,6 +52,7 @@
         </div>
 
         <ul  id="navbar-nav-user">
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
                         <li>
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -67,6 +71,14 @@
                             </div>
                         </li>
                     </ul>
+<<<<<<< HEAD
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+=======
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
 
         <div class="clearfix"></div>
 
@@ -169,15 +181,41 @@
         <div class="footer-grids">
             <div class="col-md-3 footer-grid">
                 <h4>网站导航</h4>
+<<<<<<< HEAD
+                <ul>
+                    <li>南京大学——鼓楼校区</li>
+                    <li>陶园1舍</li>
+                    <li>230064</li>
+                    <li>Hours: Mon-Fri 9am - 6:00pm</li>
+=======
                 <ul class="web-nav">
                     <li><a href="<?php echo U('Index/health');?>">健康管理</a></li>
                     <li><a href="<?php echo U('Index/activity');?>">活动中心</a></li>
                     <li><a href="<?php echo U('Index/advice');?>">建议管理</a></li>
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
                 <h4>联系我们</h4>
                 <ul>
+<<<<<<< HEAD
+                    <li>电话: +1 234-567-890</li>
+                    <li>传真: +1 646-216-9789</li>
+                    <li>邮件: <a href="mailto:info@example.com">1016990109@qq.com </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4>获得帮助</h4>
+
+                <form>
+                    <input type="email" value="输入你的邮箱" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
+                    <input type="submit" value=" ">
+                </form>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h3><a href="index.html">YOUR PARTNER</a></h3>
+=======
                     <li><a href="mailto:zuimoeacg@163.com" alt="" title="点击联系我们">zuimoeacg@163.com</a></li>
                 </ul>
             </div>
@@ -190,6 +228,7 @@
             </div>
             <div class="col-md-3 footer-grid">
                 <h3><a href="<?php echo U('Index/index');?>">YOUR PARTNER</a></h3>
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
             </div>
             <div class="clearfix"></div>
         </div>

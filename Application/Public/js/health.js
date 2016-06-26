@@ -132,6 +132,18 @@ function initialDate(){
     document.getElementById("slumber_date").value = formatDate;
 }
 
+function showToast(success, text) {
+	var toast = $("#modifyResult");
+	var toastText = $("#modifyResultText");
+	if (success) {
+		toast.attr("class", "alert alert-success alert-dismissible");
+	} else {
+		toast.attr("class", "alert alert-warning alert-dismissible");
+	}
+	toastText.innerText = text;
+	toast.slideDown(400);
+}
+
 function saveBaseInfo(){
     var height = document.getElementById("height").value;
     var weight = document.getElementById("weight").value;
@@ -140,14 +152,14 @@ function saveBaseInfo(){
         {height:height,weight:weight},
         function(data){
             if(data){
-                $("#myModal").modal("show");
+				showToast(true, "修改成功！");
             }else {
-                document.getElementsByClassName("modal-body")[0].innerHTML = "保存失败，检查网络连接！"
-                $("#myModal").modal("show");
+				showToast(true, "修改失败，请检查网络连接");
             }
         }
     );
 }
+
 
 function saveExerciseGoal(){
     var goal = document.getElementById("exercise_goal").value;
@@ -157,6 +169,7 @@ function saveExerciseGoal(){
         function(data){
             if(data){
                 $("#myModal").modal("show");
+				$("#modifyResult").slideDown(500);
             }else {
                 document.getElementsByClassName("modal-body")[0].innerHTML = "更改失败，检查网络连接！"
                 $("#myModal").modal("show");

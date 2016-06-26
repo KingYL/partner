@@ -7,6 +7,12 @@
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<<<<<<< HEAD
+	<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
+	<script src="/partner/Application/Public/js/bootstrap.js"></script>
+	<script src="/partner/Application/Public/js/util.js"/>
+=======
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
     <!-- //for-mobile-apps -->
     <script>
         function setCookie(){
@@ -16,8 +22,12 @@
         }
     </script>
 </head>
+<<<<<<< HEAD
+<body onload="setCookie()"><!-- header -->
+=======
 <body onload="setCookie()">
 <!-- header -->
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="header-left">
@@ -40,6 +50,9 @@
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Health/index');?>">健康管理</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Home/Activity/index/p/1');?>">活动</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Advice/index');?>">建议</a></li>
+<<<<<<< HEAD
+                        <li class="hvr-bounce-to-bottom"><a href="#">待定</a></li>
+=======
                     </ul>
                     
                     <div class="clearfix"></div>
@@ -49,6 +62,7 @@
         </div>
 
         <ul  id="navbar-nav-user">
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
                         <li>
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -67,6 +81,14 @@
                             </div>
                         </li>
                     </ul>
+<<<<<<< HEAD
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+=======
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
 
         <div class="clearfix"></div>
 
@@ -74,7 +96,10 @@
 
 </div>
 <!-- //header -->
+<<<<<<< HEAD
+=======
 
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
 <div class="main" style="margin-top: 130px">
     <div class="container">
         <div class="col-md-3 announce">
@@ -120,6 +145,13 @@
                         </div>
                     </div>
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
+<<<<<<< HEAD
+            <div class="clearfix"></div>
+			<nav id="page" style="float:right"></nav> 
+        </div>
+    </div>
+</div>
+=======
             <div style="float: right"><?php echo ($page); ?></div>
             <!--<nav class="page">-->
                 <!--<ul class="pagination">-->
@@ -137,21 +169,48 @@
     </div>
 </div>
 
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
 <!--footer-->
 <div class="footer">
     <div class="container">
         <div class="footer-grids">
             <div class="col-md-3 footer-grid">
                 <h4>网站导航</h4>
+<<<<<<< HEAD
+                <ul>
+                    <li>南京大学——鼓楼校区</li>
+                    <li>陶园1舍</li>
+                    <li>230064</li>
+                    <li>Hours: Mon-Fri 9am - 6:00pm</li>
+=======
                 <ul class="web-nav">
                     <li><a href="<?php echo U('Index/health');?>">健康管理</a></li>
                     <li><a href="<?php echo U('Index/activity');?>">活动中心</a></li>
                     <li><a href="<?php echo U('Index/advice');?>">建议管理</a></li>
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
                 <h4>联系我们</h4>
                 <ul>
+<<<<<<< HEAD
+                    <li>电话: +1 234-567-890</li>
+                    <li>传真: +1 646-216-9789</li>
+                    <li>邮件: <a href="mailto:info@example.com">1016990109@qq.com </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4>获得帮助</h4>
+
+                <form>
+                    <input type="email" value="输入你的邮箱" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
+                    <input type="submit" value=" ">
+                </form>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h3><a href="index.html">YOUR PARTNER</a></h3>
+=======
                     <li><a href="mailto:zuimoeacg@163.com" alt="" title="点击联系我们">zuimoeacg@163.com</a></li>
                 </ul>
             </div>
@@ -164,6 +223,7 @@
             </div>
             <div class="col-md-3 footer-grid">
                 <h3><a href="<?php echo U('Index/index');?>">YOUR PARTNER</a></h3>
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
             </div>
             <div class="clearfix"></div>
         </div>
@@ -179,8 +239,21 @@
 <!--//copy-right-->
 
 <!-- for bootstrap working -->
+<<<<<<< HEAD
+<script>
+	$(document).ready(function() {
+	$(document).ready(function() {
+		var currentPage = getParam('page');
+		if (currentPage == null)
+			currentPage = 0;
+		var leftPage = <?php echo ($leftPage); ?>;
+		appendPageUrl(currentPage, leftPage, "../Activity/index?page=", $("#page"));
+	});
+</script>
+=======
 <script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
 <script src="/partner/Application/Public/js/bootstrap.js"></script>
+>>>>>>> afdd49eb5f7ff61632a4cee9f513a36a6e30352b
 <!-- //for bootstrap working -->
 </body>
 </html>

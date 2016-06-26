@@ -7,6 +7,9 @@
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/bootstrap.js"></script>
+	<script src="__PUBLIC__/js/util.js"/>
     <!-- //for-mobile-apps -->
     <script>
         function setCookie(){
@@ -16,11 +19,9 @@
         }
     </script>
 </head>
-<body onload="setCookie()">
-<!-- header -->
+<body onload="setCookie()"><!-- header -->
 <include file="Application/Public/tpl/header.html" />
 <!-- //header -->
-
 <div class="main" style="margin-top: 130px">
     <div class="container">
         <div class="col-md-3 announce">
@@ -69,23 +70,11 @@
                 </div>
 
             </volist>
-            <div style="float: right">{$page}</div>
-            <!--<nav class="page">-->
-                <!--<ul class="pagination">-->
-                    <!--<li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>-->
-                    <!--<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li><a href="#">2 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li><a href="#">3 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li><a href="#">4 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>-->
-                <!--</ul>-->
-            <!--</nav>-->
             <div class="clearfix"></div>
+			<nav id="page" style="float:right"></nav> 
         </div>
-
     </div>
 </div>
-
 <!--footer-->
 <include file="Application/Public/tpl/footer.html" />
 <!--//footer-->
@@ -94,8 +83,16 @@
 <!--//copy-right-->
 
 <!-- for bootstrap working -->
-<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
-<script src="__PUBLIC__/js/bootstrap.js"></script>
+<script>
+	$(document).ready(function() {
+	$(document).ready(function() {
+		var currentPage = getParam('page');
+		if (currentPage == null)
+			currentPage = 0;
+		var leftPage = {$leftPage};
+		appendPageUrl(currentPage, leftPage, "../Activity/index?page=", $("#page"));
+	});
+</script>
 <!-- //for bootstrap working -->
 </body>
 </html>
