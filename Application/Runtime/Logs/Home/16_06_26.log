@@ -4756,3 +4756,2249 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
 
+[ 2016-06-26T16:17:21+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0021s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001621s ]
+
+[ 2016-06-26T16:18:54+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003216s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0038s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0015s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001930s ]
+
+[ 2016-06-26T16:19:17+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0056s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2016-06-26T16:19:18+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0018s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2016-06-26T16:19:20+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001658s ]
+
+[ 2016-06-26T16:20:20+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0013s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001527s ]
+
+[ 2016-06-26T16:21:05+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0017s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0016s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2016-06-26T16:21:38+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0024s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001656s ]
+
+[ 2016-06-26T16:21:55+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0016s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001583s ]
+
+[ 2016-06-26T16:22:14+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0015s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2016-06-26T16:23:05+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0027s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0021s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004549s ]
+
+[ 2016-06-26T16:23:06+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0011s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0023s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0010s ]
+
+[ 2016-06-26T16:23:07+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2016-06-26T16:23:07+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0005s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0026s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0012s ]
+
+[ 2016-06-26T16:23:07+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2016-06-26T16:24:13+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0017s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2016-06-26T16:24:19+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0032s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001972s ]
+
+[ 2016-06-26T16:25:29+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002828s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0023s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0016s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001553s ]
+
+[ 2016-06-26T16:25:40+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-06-26T16:25:54+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0012s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2016-06-26T16:26:11+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0012s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2016-06-26T16:26:17+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2016-06-26T16:27:57+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0013s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0012s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2016-06-26T16:28:13+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0015s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2016-06-26T16:28:30+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2016-06-26T16:28:39+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2016-06-26T16:28:54+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0018s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001590s ]
+
+[ 2016-06-26T16:29:18+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0012s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2016-06-26T16:29:42+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0031s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2016-06-26T16:29:54+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001510s ]
+
+[ 2016-06-26T16:30:16+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0016s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2016-06-26T16:30:21+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001674s ]
+
+[ 2016-06-26T16:30:28+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-06-26T16:30:45+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0012s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-06-26T16:31:16+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0015s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0021s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002734s ]
+
+[ 2016-06-26T16:31:30+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0023s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0017s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2016-06-26T16:31:35+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0030s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-26T16:31:36+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2016-06-26T16:32:21+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0036s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2016-06-26T16:32:35+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0018s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2016-06-26T16:33:07+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002050s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0024s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2016-06-26T16:33:24+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2016-06-26T16:34:13+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0018s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0013s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001515s ]
+
+[ 2016-06-26T16:34:56+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002744s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0014s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2016-06-26T16:35:12+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0031s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002488s ]
+
+[ 2016-06-26T16:35:14+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0006s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:35:14+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2016-06-26T16:35:15+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0007s ]
+
+[ 2016-06-26T16:35:15+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0017s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001506s ]
+
+[ 2016-06-26T16:35:50+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0015s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0017s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-06-26T16:35:51+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0048s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0018s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:35:51+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2016-06-26T16:35:52+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0018s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0011s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0010s ]
+
+[ 2016-06-26T16:35:52+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0013s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-06-26T16:36:27+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0019s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2016-06-26T16:36:28+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0007s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0011s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:36:28+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-06-26T16:36:30+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0005s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0008s ]
+
+[ 2016-06-26T16:36:30+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2016-06-26T16:36:36+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2016-06-26T16:36:37+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0023s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0008s ]
+
+[ 2016-06-26T16:36:37+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-06-26T16:36:38+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0019s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0015s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0003s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0025s ]
+
+[ 2016-06-26T16:36:38+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0019s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2016-06-26T16:36:40+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0006s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0026s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:36:40+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2016-06-26T16:36:41+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0006s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:36:41+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2016-06-26T16:36:42+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0006s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0008s ]
+
+[ 2016-06-26T16:36:42+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0021s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-06-26T16:36:43+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0006s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:36:43+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2016-06-26T16:36:44+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0009s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0018s ]
+
+[ 2016-06-26T16:36:44+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0013s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-06-26T16:36:44+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0005s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0034s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0099s ]
+
+[ 2016-06-26T16:36:44+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001639s ]
+
+[ 2016-06-26T16:37:01+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.1498s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0017s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2016-06-26T16:37:03+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0006s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0003s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:37:03+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0021s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2016-06-26T16:37:03+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0031s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0008s ]
+
+[ 2016-06-26T16:37:04+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-06-26T16:37:04+08:00 ] ::1 /partner/index.php/Home/Activity/enterActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0005s ]
+SQL: INSERT INTO r_activity_user (activity_id,uid) VALUES ('12','1') [ RunTime:0.0025s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: UPDATE activity SET enter_amount=enter_amount+1 WHERE activity_id=12 [ RunTime:0.0010s ]
+
+[ 2016-06-26T16:37:04+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2016-06-26T16:37:05+08:00 ] ::1 /partner/index.php/Home/Activity/exitActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0009s ]
+NOTIC: [2] Illegal offset type in isset or empty /Users/administrasion/Documents/web/partner/ThinkPHP/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM r_activity_user WHERE activity_id = 12 AND uid = 1 [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: UPDATE activity SET enter_amount=enter_amount-1 WHERE activity_id=12 [ RunTime:0.0009s ]
+
+[ 2016-06-26T16:37:05+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001290s ]
+
+[ 2016-06-26T16:37:07+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002645s ]
+
+[ 2016-06-26T16:37:08+08:00 ] ::1 /partner/index.php/Home/Activity/activity/ac/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0026s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity WHERE activity_id = 12  [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( r_activity_user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM r_activity_user WHERE activity_id = 12 AND uid = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /Users/administrasion/Documents/web/partner/Application/Home/Controller/ActivityController.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+

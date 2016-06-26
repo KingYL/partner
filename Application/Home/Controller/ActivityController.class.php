@@ -109,6 +109,8 @@ class ActivityController extends CommonController {
             $activity["is_enter"] = 0;
         }
         $this->assign("activity",$activity);
+
+        $users = array();
         $this->display("Index/activity_unit");
     }
 
