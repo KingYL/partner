@@ -21,7 +21,7 @@
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="header-left">
-            <a href="index.html">你的“伙伴”</a>
+            <a href="<?php echo U('Index/index');?>">你的“伙伴”</a>
         </div>
         <div class="navigation">
             <nav class="navbar navbar-default">
@@ -40,7 +40,15 @@
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Health/index');?>">健康管理</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Home/Activity/index/p/1');?>">活动</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="<?php echo U('Advice/index');?>">建议</a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="#">待定</a></li>
+                    </ul>
+                    
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <ul  id="navbar-nav-user">
                         <li>
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -59,11 +67,6 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="clearfix"></div>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-        </div>
 
         <div class="clearfix"></div>
 
@@ -165,33 +168,28 @@
     <div class="container">
         <div class="footer-grids">
             <div class="col-md-3 footer-grid">
-                <h4>地址</h4>
-                <ul>
-                    <li>南京大学——鼓楼校区</li>
-                    <li>陶园1舍</li>
-                    <li>230064</li>
-                    <li>Hours: Mon-Fri 9am - 6:00pm</li>
+                <h4>网站导航</h4>
+                <ul class="web-nav">
+                    <li><a href="<?php echo U('Index/health');?>">健康管理</a></li>
+                    <li><a href="<?php echo U('Index/activity');?>">活动中心</a></li>
+                    <li><a href="<?php echo U('Index/advice');?>">建议管理</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
                 <h4>联系我们</h4>
                 <ul>
-                    <li>电话: +1 234-567-890</li>
-                    <li>传真: +1 646-216-9789</li>
-                    <li>邮件: <a href="mailto:info@example.com">1016990109@qq.com </a></li>
+                    <li><a href="mailto:zuimoeacg@163.com" alt="" title="点击联系我们">zuimoeacg@163.com</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
-                <h4>获得帮助</h4>
-
-                <form>
-                    <input type="email" value="输入你的邮箱" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
-                    <input type="submit" value=" ">
-                </form>
+                <h4>友情链接</h4>
+                <ul>
+                    <li><a href="http://www.codoon.com" target="_blank"><!-- <img class="friend-logo" src="/partner/Application/Public/images/gudong-logo.jpg" alt="咕咚"/> -->咕咚网</a></li>
+                    <li><a href="http://www.dongqil.com/"><!-- <img class="friend-logo" src="/partner/Application/Public/images/quyundong-logo.png" > -->去运动网</a></li>
+                </ul>
             </div>
             <div class="col-md-3 footer-grid">
-                <h3><a href="index.html">YOUR PARTNER</a></h3>
+                <h3><a href="<?php echo U('Index/index');?>">YOUR PARTNER</a></h3>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -201,7 +199,7 @@
 <!--copy-right-->
 <div class="copy-right">
     <div class="container">
-        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="http://w3layouts.com/"> 洪传旺</a></p>
+        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="#">你的伙伴</a></p>
     </div>
 </div>
 <!--//copy-right-->
