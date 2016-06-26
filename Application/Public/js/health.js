@@ -136,11 +136,11 @@ function showToast(success, text) {
 	var toast = $("#modifyResult");
 	var toastText = $("#modifyResultText");
 	if (success) {
-		toast.attr("class", "alert alert-success alert-dismissible");
+		toast.attr("class", "alert alert-success alert-dismissible fade in");
 	} else {
-		toast.attr("class", "alert alert-warning alert-dismissible");
+		toast.attr("class", "alert alert-warning alert-dismissible fade in");
 	}
-	toastText.innerText = text;
+	toastText.text(text);
 	toast.slideDown(400);
 }
 
@@ -168,11 +168,9 @@ function saveExerciseGoal(){
         {goal:goal},
         function(data){
             if(data){
-                $("#myModal").modal("show");
-				$("#modifyResult").slideDown(500);
+				showToast(true, "修改成功！");
             }else {
-                document.getElementsByClassName("modal-body")[0].innerHTML = "更改失败，检查网络连接！"
-                $("#myModal").modal("show");
+				showToast(true, "修改失败，请检查网络连接");
             }
         }
     );
