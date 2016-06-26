@@ -83,7 +83,7 @@ ul {
 /*-- header --*/
 .header {
     background: #78be09;
-    padding: 20px 0px;
+    padding: 0.5em 0;
 }
 
 .header-left {
@@ -91,20 +91,10 @@ ul {
 }
 
 .header-left a {
-    font-size: 40px;
-    color: #fff;
+    font-size: 2.4em;
+    color: aliceblue;
     text-decoration: none;
     font-family: 'Fredericka the Great', cursive;
-    padding: 4px 20px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#40c8f4+0,40c8f4+24,ffe641+100 */
-    background: #0573f4; /* Old browsers */
-    background: -moz-linear-gradient(left, #0087f4 0%, #5605f4 24%, #ff0080 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0087f4), color-stop(24%, #5605f4), color-stop(100%, #ff0080)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #0087f4 0%, #5605f4 24%, #ff0080 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #0087f4 0%, #5605f4 24%, #ff0376 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #0087f4 0%, #5605f4 24%, #ff0376 100%); /* IE10+ */
-    background: linear-gradient(to right, #0087f4 0%, #5605f4 24%, #ff0080 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40c8f4', endColorstr='#ffe641', GradientType=1); /* IE6-9 */
 }
 
 .navigation {
@@ -1169,8 +1159,8 @@ margin: 20px 20px;
 }
 
 .footer {
-    background: #78be09;
-    padding: 50px 0;
+    background: #8BC34A;
+    padding: 1.5em 0;
 }
 
 .footer-grid h4 {
@@ -1219,15 +1209,15 @@ margin: 20px 20px;
 }
 
 .copy-right {
-    background: #262324;
-    padding: 17px 0;
+    background: #8BC34A;
+    padding: 0.2em 0;
 }
 
 .copy-right p {
     text-align: center;
     margin: 0 0 0px 0;
-    font-size: 13px;
     color: #fff;
+    font-size: 1.2em;
 }
 
 .copy-right p a {
