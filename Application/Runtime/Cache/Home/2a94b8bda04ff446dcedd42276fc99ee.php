@@ -21,7 +21,7 @@
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="header-left">
-            <a href="index.html">你的“伙伴”</a>
+            <a href="<?php echo U('Index/index');?>">你的“伙伴”</a>
         </div>
         <div class="navigation">
             <nav class="navbar navbar-default">
@@ -165,7 +165,7 @@
     <div class="container">
         <div class="footer-grids">
             <div class="col-md-3 footer-grid">
-                <h4>地址</h4>
+                <h4>网站导航</h4>
                 <ul>
                     <li>南京大学——鼓楼校区</li>
                     <li>陶园1舍</li>
@@ -201,7 +201,7 @@
 <!--copy-right-->
 <div class="copy-right">
     <div class="container">
-        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="http://w3layouts.com/"> 洪传旺</a></p>
+        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="#">你的伙伴</a></p>
     </div>
 </div>
 <!--//copy-right-->

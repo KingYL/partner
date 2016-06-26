@@ -32,7 +32,7 @@
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="header-left">
-            <a href="index.html">你的“伙伴”</a>
+            <a href="<?php echo U('Index/index');?>">你的“伙伴”</a>
         </div>
         <div class="navigation">
             <nav class="navbar navbar-default">
@@ -82,9 +82,8 @@
 
 </div>
 <!-- //header -->
-
-<div class="main" style="margin-top: 130px">
-    <div class="container">
+<div class="main">
+    <div class="container" style="margin-top: 130px">
         <div class="col-md-3" style="padding: 0">
             <div class="top-nav2">
                 <span class="menu2"><img src="/partner/Application/Public/images/menu.png" alt=""> <lable>健康管理</lable></span>
@@ -190,7 +189,7 @@
                 <div class="tab-pane fade in" id="exercise">
                     <div class="title">
                         <p>健身追踪</p>
-                        <label>每天运动目标：<input type="text" id="exercise_goal" value="<?php echo ($user["exercise_goal"]); ?>步">
+                        <label>每天运动目标：<input type="text" id="exercise_goal" value="<?php echo ($user["exercise_goal"]); ?>">步
                             <button onclick="saveExerciseGoal()">更改</button>
                         </label>
                     </div>
@@ -226,7 +225,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="date-div">
-                        <label for="date">日期：</label><input type="date" id="exercise_date" class="date" onchange="updateExerciseInfo()">
+                        <label for="date">日期：</label><input type="date" id="exercise_date" class="date" onchange="updateExerciseInfo()"  />
                     </div>
                     <div class="title-2">
                         <p>运动曲线:<span id="exerciseGot"></span></p>
@@ -270,7 +269,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="date-div">
-                        <label for="date">日期：</label><input type="date" id="slumber_date" class="date" onchange="updateSlumberInfo()">
+                        <label for="date">日期：</label><input type="date" id="slumber_date" class="date" onchange="updateSlumberInfo()" value="<?php echo date('Y-m-d');?>">
                     </div>
                     <div class="title-2">
                         <p>睡眠分析:<span id="slumberGot"></span></p>
@@ -279,8 +278,14 @@
                 </div>
             </div>
         </div>
-
-    </div>
+    </div> 
+	<div class="container">
+	<div class="alert alert-success alert-dismissible" role="alert" id="modifyResult"
+		style="display:none;margin:0 15px 0 0;">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <strong id="modifyResultText"></strong>
+	</div>
+	</div>
     <div class="clearfix"></div>
 </div>
 <div class="clearfix"></div>
@@ -315,7 +320,7 @@
     <div class="container">
         <div class="footer-grids">
             <div class="col-md-3 footer-grid">
-                <h4>地址</h4>
+                <h4>网站导航</h4>
                 <ul>
                     <li>南京大学——鼓楼校区</li>
                     <li>陶园1舍</li>
@@ -351,7 +356,7 @@
 <!--copy-right-->
 <div class="copy-right">
     <div class="container">
-        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="http://w3layouts.com/"> 洪传旺</a></p>
+        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="#">你的伙伴</a></p>
     </div>
 </div>
 <!--//copy-right-->
@@ -361,6 +366,16 @@
 <script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
 <script type="text/javascript" src="/partner/Application/Public/js/Chart.js"></script>
 <script type="text/javascript" src="/partner/Application/Public/js/health.js"></script>
+<script>
+    $("#exercise_goal").ready(function() {
+        $("#exercise_goal").keypress(function (e) {
+          if (e.which == 13) {
+            saveExerciseGoal()
+            return false;    //<---- Add this line
+          }
+        });
+    });
+</script>
 <!-- //for bootstrap working -->
 </body>
 </html>

@@ -9530,3 +9530,2613 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
 
+[ 2016-06-26T15:26:36+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-06-26T15:26:42+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:26:43+08:00 ] ::1 /partner/index.php/Home/Health/getSlumberInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0006s ]
+SQL: SELECT * FROM slumber_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 46 行.
+
+[ 2016-06-26T15:26:44+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:26:59+08:00 ] ::1 /partner/index.php/Home/Health/saveExerciseGoal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0004s ]
+SQL: UPDATE base_info SET exercise_goal='10000' WHERE uid = 1 [ RunTime:0.2691s ]
+
+[ 2016-06-26T15:27:01+08:00 ] ::1 /partner/index.php/Home/Health/saveExerciseGoal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET exercise_goal='10000' WHERE uid = 1 [ RunTime:0.1748s ]
+
+[ 2016-06-26T15:27:05+08:00 ] ::1 /partner/index.php/Home/Health/saveExerciseGoal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET exercise_goal='10000' WHERE uid = 1 [ RunTime:0.2712s ]
+
+[ 2016-06-26T15:27:48+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-06-26T15:27:50+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2016-06-26T15:27:52+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-06-26T15:27:59+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-06-26T15:28:51+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-06-26T15:29:17+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2016-06-26T15:29:26+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-06-26T15:29:28+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-06-26T15:29:35+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-06-26T15:30:01+08:00 ] ::1 /partner/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-06-26T15:30:01+08:00 ] ::1 /partner/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-06-26T15:30:07+08:00 ] ::1 /partner/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-06-26T15:31:29+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-06-26T15:32:01+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-06-26T15:32:10+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-06-26T15:32:10+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-06-26T15:32:30+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-06-26T15:32:31+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-06-26T15:32:36+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-06-26T15:32:37+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-06-26T15:32:49+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2016-06-26T15:37:46+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-06-26T15:37:48+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2016-06-26T15:37:48+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2016-06-26T15:44:13+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2016-06-26T15:45:01+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-06-26T15:45:12+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-06-26T15:45:41+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-06-26T15:46:10+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-06-26T15:46:42+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-06-26T15:48:49+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2016-06-26T15:48:56+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-06-26T15:49:18+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:50:16+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-06-26T15:50:24+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-06-26T15:50:42+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-06-26T15:50:42+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-06-26T15:51:02+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-06-26T15:51:43+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-06-26T15:53:09+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-06-26T15:53:18+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-06-26T15:53:25+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-06-26T15:53:31+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-06-26T15:53:41+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-06-26T15:53:48+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-06-26T15:53:56+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0012s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2016-06-26T15:54:11+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000487s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-06-26T15:55:03+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-06-26T15:55:09+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-06-26T15:55:25+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-06-26T15:55:32+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2016-06-26T15:55:35+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0009s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:55:48+08:00 ] ::1 /partner/index.php/Home/Health/saveExerciseGoal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET exercise_goal='10000' WHERE uid = 1 [ RunTime:0.5679s ]
+
+[ 2016-06-26T15:56:07+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-06-26T15:56:39+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-06-26T15:56:56+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-06-26T15:57:08+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-06-26T15:57:26+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2016-06-26T15:58:11+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:58:45+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-06-26T15:59:04+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-06-26T15:59:11+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-06-26T15:59:28+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0013s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:59:31+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T15:59:31+08:00 ] ::1 /partner/index.php/Home/Health/getSlumberInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM slumber_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 46 行.
+
+[ 2016-06-26T16:00:11+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-06-26T16:00:54+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-06-26T16:00:59+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-06-26T16:01:19+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-06-26T16:01:57+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002208s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2016-06-26T16:02:26+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T16:02:27+08:00 ] ::1 /partner/index.php/Home/Health/saveExerciseGoal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET exercise_goal='10000' WHERE uid = 1 [ RunTime:0.3341s ]
+
+[ 2016-06-26T16:02:57+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-06-26T16:03:06+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000652s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2016-06-26T16:03:15+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0006s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T16:04:04+08:00 ] ::1 /partner/index.php/Home/Health/saveExerciseGoal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0004s ]
+SQL: UPDATE base_info SET exercise_goal='10000' WHERE uid = 1 [ RunTime:0.1587s ]
+
+[ 2016-06-26T16:04:11+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-06-26T16:04:14+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T16:04:15+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-06-26T16:04:16+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0007s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T16:04:40+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-06-26T16:04:45+08:00 ] ::1 /partner/index.php/Home/Health/getExerciseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-6-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 35 行.
+
+[ 2016-06-26T16:04:46+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0008s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-06-26T16:05:13+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-06-26T16:05:16+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-06-26T16:05:18+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-06-26T16:05:21+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-06-26T16:05:33+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-06-26T16:07:43+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-06-26T16:10:12+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0004s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-06-26T16:11:41+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-06-26T16:11:44+08:00 ] ::1 /partner/index.php/Home/Health/saveBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET height='180',weight='66',BMI='20.4' WHERE uid = 1 [ RunTime:0.1889s ]
+
+[ 2016-06-26T16:12:18+08:00 ] ::1 /partner/index.php/Home/Health/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( exercise_info ) [ RunTime:0.0001s ]
+SQL: PRAGMA table_info( slumber_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM exercise_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Controller\HealthController.class.php 第 14 行.
+SQL: SELECT * FROM slumber_info WHERE date = '2016-06-26' AND uid = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-06-26T16:12:20+08:00 ] ::1 /partner/index.php/Home/Health/saveBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0004s ]
+SQL: UPDATE base_info SET height='180',weight='66',BMI='20.4' WHERE uid = 1 [ RunTime:0.1913s ]
+
+[ 2016-06-26T16:14:41+08:00 ] ::1 /partner/index.php/Home/Health/saveBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET height='180',weight='66',BMI='20.4' WHERE uid = 1 [ RunTime:0.2298s ]
+
+[ 2016-06-26T16:14:44+08:00 ] ::1 /partner/index.php/Home/Health/saveBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0004s ]
+SQL: UPDATE base_info SET height='180',weight='66',BMI='20.4' WHERE uid = 1 [ RunTime:0.1690s ]
+
+[ 2016-06-26T16:14:47+08:00 ] ::1 /partner/index.php/Home/Health/saveBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET height='180',weight='66',BMI='20.4' WHERE uid = 1 [ RunTime:0.1811s ]
+
+[ 2016-06-26T16:14:49+08:00 ] ::1 /partner/index.php/Home/Health/saveBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: UPDATE base_info SET height='180',weight='66',BMI='20.4' WHERE uid = 1 [ RunTime:0.1938s ]
+

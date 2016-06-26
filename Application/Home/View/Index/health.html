@@ -31,9 +31,8 @@
 <!-- header -->
 <include file="Application/Public/tpl/header.html" />
 <!-- //header -->
-
-<div class="main" style="margin-top: 130px">
-    <div class="container">
+<div class="main">
+    <div class="container" style="margin-top: 130px">
         <div class="col-md-3" style="padding: 0">
             <div class="top-nav2">
                 <span class="menu2"><img src="__PUBLIC__/images/menu.png" alt=""> <lable>健康管理</lable></span>
@@ -228,8 +227,14 @@
                 </div>
             </div>
         </div>
-
-    </div>
+    </div> 
+	<div class="container">
+	<div class="" role="alert" id="modifyResult"
+		style="display:none;margin:0 15px 0 0;">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <strong id="modifyResultText"></strong>
+	</div>
+	</div>
     <div class="clearfix"></div>
 </div>
 <div class="clearfix"></div>
@@ -256,7 +261,7 @@
             return false;    //<---- Add this line
           }
         });
-    })
+    });
 </script>
 <!-- //for bootstrap working -->
 </body>

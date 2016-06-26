@@ -73,7 +73,6 @@
 
 </div>
 <!-- //header -->
-
 <div class="main" style="margin-top: 130px">
     <div class="container">
         <div class="col-md-3 announce">
@@ -165,7 +164,7 @@
 <!--copy-right-->
 <div class="copy-right">
     <div class="container">
-        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="http://w3layouts.com/"> 人机交互第12小组</a></p>
+        <p> &copy; 2015 partner. All Rights Reserved | Design by <a href="#">你的伙伴</a></p>
     </div>
 </div>
 <!--//copy-right-->
@@ -173,7 +172,7 @@
 <!-- for bootstrap working -->
 <script>
 	$(document).ready(function() {
-		
+	$(document).ready(function() {
 		var currentPage = getParam('page');
 		if (currentPage == null)
 			currentPage = 0;
