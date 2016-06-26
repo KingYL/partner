@@ -2,10 +2,75 @@
 namespace Home\Controller;
 use Think\Controller;
 use Home\Model\UserModel;
+
 use Think\Page;
 use Think\Upload;
 
+use Home\Common\Util as util;
+
 class ActivityController extends CommonController {
+
+    public function create () {
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+        $imgUrl = $_POST['image'];
+        $beginTime = $_POST['beginTime'];
+        $endTime = $_POST['endTime'];
+
+        if (!isset($title) || !isset($content) || !isset($imgUrl) ||
+            !isset($beginTime) || !isset($endTime) ) {
+            $this->ajaxReturn([
+                    'result'=>0,
+                    'errMsg'=>"参数缺失!",
+                ]);
+        }
+
+        $newRecord = [
+            'title'=>$title,
+            'content'=>$content,
+            'img_url'=>$imgUrl,
+            'enter_amount'=>0,
+            'post_time'=>date('Y-m-d H:i:s'),
+            'begin_time'=>util\TimeUtil::getInstance()->convertToT($beginTime),
+            'end_time'=>util\TimeUtil::getInstance()->convertToT($endTime),
+        ];
+
+        $id = M('activity')->add($newRecord);
+
+        $data = [
+            'result'=>$id
+        ];
+
+        $this->ajaxReturn($data);
+
+    }
+
+    public function modify () {
+        $id = $_POST['id'];
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+        $imgUrl = $_POST['image'];
+        $beginTime = $_POST['beginTime'];
+        $endTime = $_POST['endTime'];
+
+        $newRecord = [
+            'title'=>$title,
+            'content'=>$content,
+            'img_url'=>$imgUrl,
+            'begin_time'=>util\TimeUtil::getInstance()->convertToT($beginTime),
+            'end_time'=>util\TimeUtil::getInstance()->convertToT($endTime),
+        ];
+
+        $result = M('activity')->where(['activity_id'=>$id])->save($newRecord);
+
+        $this->ajaxReturn([
+            'result'=>($result===false?0:1)
+            ]);
+
+    }
+
+
+
     public function index(){
         $userModel = new UserModel();
         $userInfo = $userModel->getUserInfo(session("userId"));

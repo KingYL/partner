@@ -11,8 +11,8 @@ use Think\Controller;
 
 class CommonController extends Controller{
     public function _initialize(){
-        if(!session('?userId')){
-            $this->redirect("Login/index");
-        }
+        // if(!session('?userId')){
+        //     $this->redirect("Login/index");
+        // }
     }
 }
