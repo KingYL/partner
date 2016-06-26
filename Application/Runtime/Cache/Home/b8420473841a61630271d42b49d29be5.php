@@ -193,7 +193,7 @@
                 <div class="tab-pane fade in" id="exercise">
                     <div class="title">
                         <p>健身追踪</p>
-                        <label>每天运动目标：<input type="text" id="exercise_goal" value="<?php echo ($user["exercise_goal"]); ?>步">
+                        <label>每天运动目标：<input type="text" id="exercise_goal" value="<?php echo ($user["exercise_goal"]); ?>">步
                             <button onclick="saveExerciseGoal()">更改</button>
                         </label>
                     </div>
@@ -229,7 +229,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="date-div">
-                        <label for="date">日期：</label><input type="date" id="exercise_date" class="date" onchange="updateExerciseInfo()">
+                        <label for="date">日期：</label><input type="date" id="exercise_date" class="date" onchange="updateExerciseInfo()"  />
                     </div>
                     <div class="title-2">
                         <p>运动曲线:<span id="exerciseGot"></span></p>
@@ -273,7 +273,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="date-div">
-                        <label for="date">日期：</label><input type="date" id="slumber_date" class="date" onchange="updateSlumberInfo()">
+                        <label for="date">日期：</label><input type="date" id="slumber_date" class="date" onchange="updateSlumberInfo()" value="<?php echo date('Y-m-d');?>">
                     </div>
                     <div class="title-2">
                         <p>睡眠分析:<span id="slumberGot"></span></p>
@@ -359,6 +359,16 @@
 <script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
 <script type="text/javascript" src="/partner/Application/Public/js/Chart.js"></script>
 <script type="text/javascript" src="/partner/Application/Public/js/health.js"></script>
+<script>
+    $("#exercise_goal").ready(function() {
+        $("#exercise_goal").keypress(function (e) {
+          if (e.which == 13) {
+            saveExerciseGoal()
+            return false;    //<---- Add this line
+          }
+        });
+    })
+</script>
 <!-- //for bootstrap working -->
 </body>
 </html>

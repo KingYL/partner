@@ -44,6 +44,11 @@ class UserModel extends Model {
         return $userInfo;
     }
 
+    public function getUserInActivity($activityId){
+        
+        return $users;
+    }
+
     public function updateUser($userInfo){
         $userTable = M("user");
         return $userTable->save($userInfo);
