@@ -13,9 +13,18 @@ class UserController extends CommonController {
 
     public function user(){
         $userModel = new UserModel();
-        $userInfo = $userModel->getUserInfo(session("userId"));
+
+        $userId = session("userId");
+        $userInfo = $userModel->getUserInfo($userId);
         $this->assign("user", $userInfo);
-        $this->display("Index/user");
+        if (I("userId") && I("userId") != $userId) {
+            $otherUserId = I("userId");
+            $otherUser = $userModel->getUserInfo($otherUserId);
+            $this->otherUser = $otherUser;
+            $this->display("Index/otherUser");
+        } else {
+            $this->display("Index/user");
+        }
     }
 
     public function save(){
