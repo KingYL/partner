@@ -2,7 +2,8 @@
 namespace Home\Controller;
 use Home\Model\UserModel;
 use Think\Controller;
-use Think\Upload;
+
+use Home\Common\Util as util;
 
 class UserController extends CommonController {
 
@@ -12,9 +13,18 @@ class UserController extends CommonController {
 
     public function user(){
         $userModel = new UserModel();
-        $userInfo = $userModel->getUserInfo(session("userId"));
+
+        $userId = session("userId");
+        $userInfo = $userModel->getUserInfo($userId);
         $this->assign("user", $userInfo);
-        $this->display("Index/user");
+        if (I("userId") && I("userId") != $userId) {
+            $otherUserId = I("userId");
+            $otherUser = $userModel->getUserInfo($otherUserId);
+            $this->otherUser = $otherUser;
+            $this->display("Index/otherUser");
+        } else {
+            $this->display("Index/user");
+        }
     }
 
     public function save(){
@@ -29,21 +39,21 @@ class UserController extends CommonController {
     }
 
     public function uploadIcon(){
-        $upload = new Upload();
-        $upload->maxSize   =     3145728 ;// 设置附件上传大小
-        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-        $upload->rootPath  =     './Application/Public/data/'; // 设置附件上传根目录
-        $upload->autoSub = false;
-        // 上传文件
-        $info   =   $upload->upload();
-        if(!$info) {// 上传错误提示错误信息
-            $this->error($upload->getError());
-        }else{// 上传成功
+
+        $callback = function ($info) {
             $userInfo["uid"] = session("userId");
             $userInfo["icon_url"] = $info["icon_url"]['savepath'].$info["icon_url"]['savename'];
             $userModel = new UserModel();
             $userModel->updateUser($userInfo);
-            $this->success('上传成功！');
+            
+        };
+
+        $data = util\UploadUtil::getInstance()->uploadPic($callback);
+
+        if ($data['result']==0) {
+            $this->error($data['errMsg']);
+        }else {
+            $this->success('成功上传!');
         }
     }
 
@@ -104,6 +114,7 @@ class UserController extends CommonController {
         }
         $this->ajaxReturn($result);
     }
+<<<<<<< HEAD
 	
 	public function getPagePara() {
 		$page = I('page');
@@ -112,3 +123,6 @@ class UserController extends CommonController {
 		return $page;
 	}
 }
+=======
+}
+>>>>>>> 1800d2f9d76e8b1dc67691c2240f67abc9f62e39

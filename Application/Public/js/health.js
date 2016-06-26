@@ -123,7 +123,7 @@ function initialDate(){
     }else{
         formatDate += "-" + (myDate.getMonth() + 1);
     }
-    if(myDate.getDay() < 10){
+    if(myDate.getDate() < 10){
         formatDate += "-0" + myDate.getDate();
     }else{
         formatDate += "-" + myDate.getDate();

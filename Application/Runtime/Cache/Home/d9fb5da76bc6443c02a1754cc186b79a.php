@@ -7,6 +7,9 @@
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
+	<script src="/partner/Application/Public/js/bootstrap.js"></script>
+	<script src="/partner/Application/Public/js/util.js"/>
     <!-- //for-mobile-apps -->
     <script>
         function setCookie(){
@@ -16,12 +19,11 @@
         }
     </script>
 </head>
-<body onload="setCookie()">
-<!-- header -->
+<body onload="setCookie()"><!-- header -->
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="header-left">
-            <a href="index.html">你的“伙伴”</a>
+            <a href="<?php echo U('Index/index');?>">你的“伙伴”</a>
         </div>
         <div class="navigation">
             <nav class="navbar navbar-default">
@@ -117,29 +119,17 @@
                         </div>
                     </div>
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
-            <div style="float: right"><?php echo ($page); ?></div>
-            <!--<nav class="page">-->
-                <!--<ul class="pagination">-->
-                    <!--<li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>-->
-                    <!--<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li><a href="#">2 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li><a href="#">3 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li><a href="#">4 <span class="sr-only">(current)</span></a></li>-->
-                    <!--<li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>-->
-                <!--</ul>-->
-            <!--</nav>-->
             <div class="clearfix"></div>
+			<nav id="page" style="float:right"></nav> 
         </div>
-
     </div>
 </div>
-
 <!--footer-->
 <div class="footer">
     <div class="container">
         <div class="footer-grids">
             <div class="col-md-3 footer-grid">
-                <h4>地址</h4>
+                <h4>网站导航</h4>
                 <ul>
                     <li>南京大学——鼓楼校区</li>
                     <li>陶园1舍</li>
@@ -181,8 +171,16 @@
 <!--//copy-right-->
 
 <!-- for bootstrap working -->
-<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
-<script src="/partner/Application/Public/js/bootstrap.js"></script>
+<script>
+	$(document).ready(function() {
+		
+		var currentPage = getParam('page');
+		if (currentPage == null)
+			currentPage = 0;
+		var leftPage = <?php echo ($leftPage); ?>;
+		appendPageUrl(currentPage, leftPage, "../Activity/index?page=", $("#page"));
+	});
+</script>
 <!-- //for bootstrap working -->
 </body>
 </html>
