@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>伙伴</title>
+    <!--fonts-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+    <!--//fonts-->
     <link href="/partner/Application/Public/css/bootstrap.css" rel="stylesheet">
     <link href="/partner/Application/Public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- for-mobile-apps -->
@@ -11,10 +15,23 @@
     <script>
         function setCookie(){
             document.cookie = "userId=<?php echo ($user["uid"]); ?>";
-            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[0];
-            nav.setAttribute("class",nav.getAttribute("class").concat(" active"))
+            initGender();
         }
     </script>
+    <style>
+        .infoLabel {
+             font-family: "Times New Roman", Times, serif;
+             font-size: 20px;
+             font-weight: lighter;
+             display: block;
+             padding: 8px;
+        }
+
+        .infoLabel span {
+            font-weight: bold;
+            margin-right: 50px;
+        }
+    </style>
 </head>
 <body onload="setCookie()">
 <!-- header -->
@@ -76,92 +93,47 @@
 <!-- //header -->
 
 <div class="main" style="margin-top: 130px">
-    <div class="container">
-        <div class="col-md-4">
-            <div style="height: 80px;;"></div>
-            <div class="cntnt-img">
-            </div>
-            <div class="bnr-img">
-                <img src="/partner/Application/Public/data/<?php echo ($user["icon_url"]); ?>" alt="user_icon"/>
-            </div>
-            <div class="bnr-text">
-                <h1><?php echo ($user["name"]); ?></h1>
-            </div>
+    <div style="display:flex; justify-content: center">
+        <img src="/partner/Application/Public/data/<?php echo ($otherUser["icon_url"]); ?>" alt="" style="display:block;border-radius:50px" width="100px" height="100px" >
+    </div>
+    <div style="display:flex; justify-content:center; align-items: center">
+        <div>
+            <label class="infoLabel"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昵称&nbsp;:</span><?php echo ($otherUser["name"]); ?></label>
+            <label class="infoLabel"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别&nbsp;:</span><?php echo ($otherUser["gender"]); ?></label>
+            <label class="infoLabel"><span>出生日期&nbsp;:</span><?php echo ($otherUser["birthday"]); ?></label>
+            <label class="infoLabel"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱&nbsp;:</span><a href="mailto:<?php echo ($otherUser["email"]); ?>"><?php echo ($otherUser["email"]); ?></a></label>
+            <label class="infoLabel" style="font-style: italic"><span style="font-style: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;身份&nbsp;:</span>医生</label>
+            <label class="infoLabel" style="font-style: italic"><span style="font-style: normal">个性签名&nbsp;:</span><?php echo ($otherUser["sign"]); ?></label>
         </div>
-
-        <div class="col-md-8">
-            <div class="summary col-md-12">
-                <h1>自加入伙伴以来</h1>
-
-                <div class="col-md-4">
-                    <div class="circle circle-yellow">
-                        <div class="blank35"></div>
-                        <p>已运动</p>
-                        <p><?php echo ($user["exercise_amount"]); ?>天</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle circle-blue">
-                        <div class="blank35"></div>
-                        <p>已加入</p>
-                        <p id="enter_time"><?php echo ($user["enter_time"]); ?></p>
-                        <script>
-                            var enter_time = document.getElementById("enter_time");
-                            enter_time.innerHTML = parseInt((new Date().getTime() - new Date(enter_time.innerHTML).getTime())/(24 * 60 * 60 * 1000)) + "天";
-                        </script>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle circle-green">
-                        <div class="blank35"></div>
-                        <p>共燃烧</p>
-                        <p><?php echo ($user["exercise_amount"]); ?>千卡</p>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="tabs">
-                <ul id="myTab" class="nav nav-tabs">
-                    <li class="active" style="width: 33.3%">
-                        <a href="#home" data-toggle="tab">
-                            总排名
-                        </a>
-                    </li>
-                    <li style="width: 33.3%">
-                        <a href="#ios" data-toggle="tab">
-                            朋友排名
-                        </a>
-                    </li>
-                </ul>
-                <div id="myTabCon" class="tab-content">
-                    <div class="tab-pane fade in active" id="home">
-                        <ol class="rounded-list">
-                            <li><a href=""><img src="/partner/Application/Public/images/team-1.jpg" alt="1"><span>七秒悲伤</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/333.jpg" alt="1"><span>西风残照之伤</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/222.jpg" alt="1"><span>暗红</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/111.jpg" alt="1"><span>方正电脑5</span></a></li>
-                        </ol>
-                    </div>
-                    <div class="tab-pane fade" id="ios">
-                        <ol class="rounded-list">
-                            <li><a href=""><img src="/partner/Application/Public/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/333.jpg" alt="1"><span>呵呵哒</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-1.jpg" alt="1"><span>暗红</span></a></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </div>
 </div>
 
+<!--modal-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" style="top:20%">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    保存信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                保存成功！
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--//modal-->
 <!--footer-->
 <div class="footer">
     <div class="container">
@@ -171,7 +143,7 @@
                 <ul class="web-nav">
                     <li><a href="<?php echo U('Index/health');?>">健康管理</a></li>
                     <li><a href="<?php echo U('Index/activity');?>">活动中心</a></li>
-                    <li><a href="<?php echo U('Advice/index');?>">建议管理</a></li>
+                    <li><a href="<?php echo U('Index/advice');?>">建议管理</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
@@ -184,7 +156,7 @@
                 <h4>友情链接</h4>
                 <ul>
                     <li><a href="http://www.codoon.com" target="_blank"><!-- <img class="friend-logo" src="/partner/Application/Public/images/gudong-logo.jpg" alt="咕咚"/> -->咕咚网</a></li>
-                    <li><a href="http://www.dongqil.com/" target="_blank"><!-- <img class="friend-logo" src="/partner/Application/Public/images/quyundong-logo.png" > -->去运动网</a></li>
+                    <li><a href="http://www.dongqil.com/"><!-- <img class="friend-logo" src="/partner/Application/Public/images/quyundong-logo.png" > -->去运动网</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
@@ -203,9 +175,10 @@
 </div>
 <!--//copy-right-->
 
-<!-- for bootstrap working -->
+<!-- for js working -->
 <script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
+<script src="/partner/Application/Public/js/bootstrap.js"></script>
+<script type="text/javascript" src="/partner/Application/Public/js/user.js"></script>
+<!-- //for js working -->
 </body>
 </html>

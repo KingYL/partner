@@ -7,17 +7,20 @@
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
+	<script src="/partner/Application/Public/js/bootstrap.js"></script>
+	<script src="/partner/Application/Public/js/util.js"/>
     <!-- //for-mobile-apps -->
     <script>
         function setCookie(){
             document.cookie = "userId=<?php echo ($user["uid"]); ?>";
-            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[0];
-            nav.setAttribute("class",nav.getAttribute("class").concat(" active"))
+            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
+            nav.setAttribute("class",nav.getAttribute("class").concat(" active"));
+            console.log(nav);
         }
     </script>
 </head>
-<body onload="setCookie()">
-<!-- header -->
+<body><!-- header -->
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="header-left">
@@ -74,94 +77,86 @@
 
 </div>
 <!-- //header -->
-
 <div class="main" style="margin-top: 130px">
     <div class="container">
-        <div class="col-md-4">
-            <div style="height: 80px;;"></div>
-            <div class="cntnt-img">
+        <div class="col-md-3 announce">
+            <!-- 公告-->
+            <div class="title">
+                <p>热门活动</p>
             </div>
-            <div class="bnr-img">
-                <img src="/partner/Application/Public/data/<?php echo ($user["icon_url"]); ?>" alt="user_icon"/>
-            </div>
-            <div class="bnr-text">
-                <h1><?php echo ($user["name"]); ?></h1>
-            </div>
+            <hr>
+            <!-- <marquee direction="up" height="320" scrollamount="40" scrolldelay="500" onMouseOver="this.scrollDelay=1000" onMouseOut="this.scrollDelay=500">
+                <ol style="margin: 0;padding: 0 15px;font-size: 1.2em;">
+                    <u>&nbsp&nbsp&nbsp&nbsp“伙伴”系统正式上线了！！！小伙伴们快来看啊！！！！有健康管理：运动、身体健康（如心率、血压等）、睡眠等；活动管理：发布、修改、删除、参与等。</u>
+                </ol>
+            </marquee> -->
+            <ul id="hot-activity-list">
+              <li>
+                  <a href="#">
+                    南京栖霞山跑步活动
+                    </a>
+              </li>
+              <li>
+                  <a href="#">南大鼓楼校区游街</a>
+              </li>
+              <li>
+                  <a href="#">地球毁灭纪念活动</a>
+              </li>
+              
+              
+            </ul>
         </div>
 
-        <div class="col-md-8">
-            <div class="summary col-md-12">
-                <h1>自加入伙伴以来</h1>
 
-                <div class="col-md-4">
-                    <div class="circle circle-yellow">
-                        <div class="blank35"></div>
-                        <p>已运动</p>
-                        <p><?php echo ($user["exercise_amount"]); ?>天</p>
+        <div class="col-md-9">
+            <h3 style="padding: 0 10px;font-weight: bold">最新活动</h3>
+
+            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="activity">
+                    <a class="activity-img" href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>"><img  src="/partner/Application/Public/data/activity/<?php echo ($vo["img_url"]); ?>" alt="浏览器不支持"></a>
+                    <div class="activity-block">
+                        <div class="activity-title">
+                            <a href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>">
+                                <h4><?php echo ($vo["title"]); ?></h4>
+                            </a>
+                        </div>
+                        <hr class="hr-thin" />
+                        <div class="activity-meta">
+                            <span>发布时间: 2015-10-16 </span>
+                            <span>活动方：官方</span>
+                        </div>
+                        <hr class="hr-thin" />
+                        <div class="activity-content" style="width: 80%;">
+                            <p class="first-letter-para"><?php echo (htmlspecialchars($vo["content"])); ?>
+                            <a class="activity-detail-btn btn" href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>">查看详情</a>
+                            </p>
+
+                        </div>
+                        <!--<div class="clearfix"></div>-->
+                        <div class="activity-state">
+                            <div>
+                                <label id="<?php echo ($vo["activity_id"]); ?>"><?php echo ($vo["is_end"]); ?></label>
+                                <script>
+                                    var label = document.getElementById("<?php echo ($vo["activity_id"]); ?>");
+                                    if(label.innerHTML == 0){
+                                        label.innerHTML = "正在进行";
+                                    }else {
+                                        label.innerHTML = "已经结束";
+                                    }
+                                </script>
+                                <label><?php echo ($vo["enter_amount"]); ?>人参与</label>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle circle-blue">
-                        <div class="blank35"></div>
-                        <p>已加入</p>
-                        <p id="enter_time"><?php echo ($user["enter_time"]); ?></p>
-                        <script>
-                            var enter_time = document.getElementById("enter_time");
-                            enter_time.innerHTML = parseInt((new Date().getTime() - new Date(enter_time.innerHTML).getTime())/(24 * 60 * 60 * 1000)) + "天";
-                        </script>
+                    <div class="date-limit">
+                            <p>截止时间至：<span style="color:red;">2015-10-10 10:10</span></p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle circle-green">
-                        <div class="blank35"></div>
-                        <p>共燃烧</p>
-                        <p><?php echo ($user["exercise_amount"]); ?>千卡</p>
-                    </div>
-                </div>
-            </div>
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
             <div class="clearfix"></div>
-            <div class="tabs">
-                <ul id="myTab" class="nav nav-tabs">
-                    <li class="active" style="width: 33.3%">
-                        <a href="#home" data-toggle="tab">
-                            总排名
-                        </a>
-                    </li>
-                    <li style="width: 33.3%">
-                        <a href="#ios" data-toggle="tab">
-                            朋友排名
-                        </a>
-                    </li>
-                </ul>
-                <div id="myTabCon" class="tab-content">
-                    <div class="tab-pane fade in active" id="home">
-                        <ol class="rounded-list">
-                            <li><a href=""><img src="/partner/Application/Public/images/team-1.jpg" alt="1"><span>七秒悲伤</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/333.jpg" alt="1"><span>西风残照之伤</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/222.jpg" alt="1"><span>暗红</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/111.jpg" alt="1"><span>方正电脑5</span></a></li>
-                        </ol>
-                    </div>
-                    <div class="tab-pane fade" id="ios">
-                        <ol class="rounded-list">
-                            <li><a href=""><img src="/partner/Application/Public/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/333.jpg" alt="1"><span>呵呵哒</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-1.jpg" alt="1"><span>暗红</span></a></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
+			<nav id="page" style="float:right"></nav> 
         </div>
-
     </div>
 </div>
-
 <!--footer-->
 <div class="footer">
     <div class="container">
@@ -204,8 +199,15 @@
 <!--//copy-right-->
 
 <!-- for bootstrap working -->
-<script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
+<script>
+	$(document).ready(function() {
+		var currentPage = getParam('page');
+		if (currentPage == null)
+			currentPage = 0;
+		var leftPage = <?php echo ($leftPage); ?>;
+		appendPageUrl(currentPage, leftPage, "../Activity/index?page=", $("#page"));
+	});
+</script>
 <!-- //for bootstrap working -->
 </body>
 </html>

@@ -1,7 +1,8 @@
 /**
  * Created by 传旺 on 2015/11/29.
  */
-var date = new Date().toLocaleDateString().replace(/\//g,"-");
+//var date = new Date().toLocaleDateString().replace(/\//g,"-");
+var date = '2015-07-01';
 var exerciseInfoGot = false;
 var slumberInfoGot = false;
 var steps;

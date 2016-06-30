@@ -9,10 +9,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- //for-mobile-apps -->
     <script>
-        function setCookie(){
+        function setCookie() {
             document.cookie = "userId=<?php echo ($user["uid"]); ?>";
-            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[0];
-            nav.setAttribute("class",nav.getAttribute("class").concat(" active"))
+            var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
+            nav.setAttribute("class", nav.getAttribute("class").concat(" active"));
+            console.log(nav);
         }
     </script>
 </head>
@@ -77,86 +78,35 @@
 
 <div class="main" style="margin-top: 130px">
     <div class="container">
-        <div class="col-md-4">
-            <div style="height: 80px;;"></div>
-            <div class="cntnt-img">
-            </div>
-            <div class="bnr-img">
-                <img src="/partner/Application/Public/data/<?php echo ($user["icon_url"]); ?>" alt="user_icon"/>
-            </div>
-            <div class="bnr-text">
-                <h1><?php echo ($user["name"]); ?></h1>
-            </div>
-        </div>
+        <div class="col-md-8 col-md-offset-2" id="myTabContent">
+            <br>
 
-        <div class="col-md-8">
-            <div class="summary col-md-12">
-                <h1>自加入伙伴以来</h1>
+            <h3 style="padding: 0 10px;font-weight: bold;color: #78be09"><?php echo ($activity["title"]); ?></h3>
 
-                <div class="col-md-4">
-                    <div class="circle circle-yellow">
-                        <div class="blank35"></div>
-                        <p>已运动</p>
-                        <p><?php echo ($user["exercise_amount"]); ?>天</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle circle-blue">
-                        <div class="blank35"></div>
-                        <p>已加入</p>
-                        <p id="enter_time"><?php echo ($user["enter_time"]); ?></p>
-                        <script>
-                            var enter_time = document.getElementById("enter_time");
-                            enter_time.innerHTML = parseInt((new Date().getTime() - new Date(enter_time.innerHTML).getTime())/(24 * 60 * 60 * 1000)) + "天";
-                        </script>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle circle-green">
-                        <div class="blank35"></div>
-                        <p>共燃烧</p>
-                        <p><?php echo ($user["exercise_amount"]); ?>千卡</p>
-                    </div>
-                </div>
+            <p style="text-align: right;color: #636486">发表于 <?php echo ($activity["post_time"]); ?></p>
+            <hr>
+            <div>
+                <img src="<?php echo ($activity["img_url"]); ?>" alt="图片丢失"
+                     style="width: 50%;height: auto;border-radius: 10px">
             </div>
-            <div class="clearfix"></div>
-            <div class="tabs">
-                <ul id="myTab" class="nav nav-tabs">
-                    <li class="active" style="width: 33.3%">
-                        <a href="#home" data-toggle="tab">
-                            总排名
-                        </a>
-                    </li>
-                    <li style="width: 33.3%">
-                        <a href="#ios" data-toggle="tab">
-                            朋友排名
-                        </a>
-                    </li>
-                </ul>
-                <div id="myTabCon" class="tab-content">
-                    <div class="tab-pane fade in active" id="home">
-                        <ol class="rounded-list">
-                            <li><a href=""><img src="/partner/Application/Public/images/team-1.jpg" alt="1"><span>七秒悲伤</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/333.jpg" alt="1"><span>西风残照之伤</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/222.jpg" alt="1"><span>暗红</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/111.jpg" alt="1"><span>方正电脑5</span></a></li>
-                        </ol>
-                    </div>
-                    <div class="tab-pane fade" id="ios">
-                        <ol class="rounded-list">
-                            <li><a href=""><img src="/partner/Application/Public/images/team-2.jpg" alt="1"><span>三秒悲痛</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-4.jpg" alt="1"><span>情定前夕</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/333.jpg" alt="1"><span>呵呵哒</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-3.jpg" alt="1"><span>大西瓜</span></a></li>
-                            <li><a href=""><img src="/partner/Application/Public/images/team-1.jpg" alt="1"><span>暗红</span></a></li>
-                        </ol>
-                    </div>
-                </div>
+            <hr>
+            <div style="color: #7aa92f;margin-top: -10px;">
+                <p>开始时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['begin_time']))) ?></p>
+                <p>结束时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['end_time']))) ?></p>
+            </div>
+            <p style="font-size: 1.5em; margin: 20px 0px">&nbsp&nbsp&nbsp&nbsp<?php echo ($activity["content"]); ?></p>
+
+            <div style="display:flex; justify-content:center;">
+                <button id="<?php echo ($activity["activity_id"]); ?>" class="btn btn-success" style="width: 40%; margin: 20px">
+                    <?php echo ($activity["is_enter"]); ?>
+                </button>
             </div>
 
+            <?php if(is_array($users)): $i = 0; $__LIST__ = array_slice($users,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><a href="../../../User/user/userId/<?php echo ($user["uid"]); ?>">
+                    <img src="/partner/Application/Public/data/<?php echo ($user["avatar"]); ?>" alt="" style="display:inline-block;border-radius:50px" width="40px" height="40px" >
+                </a><?php endforeach; endif; else: echo "" ;endif; ?>
+
+            <p style="text-align:right"><?php echo count($users) > 10 ? '等' : '共';?> <?php echo count($users);?> 人参与</p>
         </div>
 
     </div>
@@ -205,7 +155,47 @@
 
 <!-- for bootstrap working -->
 <script type="text/javascript" src="/partner/Application/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/partner/Application/Public/js/bootstrap.js"></script>
+<script src="/partner/Application/Public/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+<script>
+    var label = document.getElementById("<?php echo ($activity["activity_id"]); ?>");
+    var activity_id = "<?php echo ($activity["activity_id"]); ?>";
+    if (label.innerHTML == 0) {
+        label.innerHTML = "点击参加";
+        $(label).removeClass('btn-danger')
+        $(label).addClass('btn-success')
+        label.onclick = function(){
+            console.log('click');
+            $.post(
+                    "/partner/index.php/Home/Activity/enterActivity",
+                    {activity_id:activity_id},
+                    function(data){
+                        if(data){
+                            location.reload();
+                        }else{
+                            alert("参与失败！");
+                        }
+                    }
+            );
+        }
+    } else {
+        label.innerHTML = "退出活动";
+        $(label).removeClass('btn-success')
+        $(label).addClass('btn-danger')
+        label.onclick = function(){
+            $.post(
+                    "/partner/index.php/Home/Activity/exitActivity",
+                    {activity_id:activity_id},
+                    function(data){
+                        if(data){
+                            location.reload();
+                        }else{
+                            alert("退出失败！");
+                        }
+                    }
+            );
+        }
+    }
+</script>
 </body>
 </html>
