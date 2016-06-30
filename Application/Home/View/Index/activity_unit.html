@@ -45,44 +45,15 @@
                 <button id="{$activity.activity_id}" class="btn btn-success" style="width: 40%; margin: 20px">
                     {$activity.is_enter}
                 </button>
-                <script>
-                    var label = document.getElementById("{$activity.activity_id}");
-                    var activity_id = "{$activity.activity_id}";
-                    if (label.innerHTML == 0) {
-                        label.innerHTML = "点击参加";
-                        label.onclick = function(){
-                            console.log('click');
-                            $.post(
-                                    "/partner/index.php/Home/Activity/enterActivity",
-                                    {activity_id:activity_id},
-                                    function(data){
-                                        if(data){
-                                            location.reload();
-                                        }else{
-                                            alert("参与失败！");
-                                        }
-                                    }
-                            );
-                        }
-                    } else {
-                        label.innerHTML = "退出活动";
-                        label.onclick = function(){
-                            $.post(
-                                    "/partner/index.php/Home/Activity/exitActivity",
-                                    {activity_id:activity_id},
-                                    function(data){
-                                        if(data){
-                                            location.reload();
-                                        }else{
-                                            alert("参与失败！");
-                                        }
-                                    }
-                            );
-                        }
-                    }
-                </script>
             </div>
-            <div class="clearfix"></div>
+
+            <volist name="users" id="user" offset="0" length='10'>
+                <a href="../../../User/user/userId/{$user.uid}">
+                    <img src="__PUBLIC__/data/{$user.avatar}" alt="" style="display:inline-block;border-radius:50px" width="40px" height="40px" >
+                </a>
+            </volist>
+
+            <p style="text-align:right">{:count($users) > 10 ? '等' : '共'} {:count($users)} 人参与</p>
         </div>
 
     </div>
@@ -99,5 +70,45 @@
 <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
 <script src="__PUBLIC__/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+<script>
+    var label = document.getElementById("{$activity.activity_id}");
+    var activity_id = "{$activity.activity_id}";
+    if (label.innerHTML == 0) {
+        label.innerHTML = "点击参加";
+        $(label).removeClass('btn-danger')
+        $(label).addClass('btn-success')
+        label.onclick = function(){
+            console.log('click');
+            $.post(
+                    "/partner/index.php/Home/Activity/enterActivity",
+                    {activity_id:activity_id},
+                    function(data){
+                        if(data){
+                            location.reload();
+                        }else{
+                            alert("参与失败！");
+                        }
+                    }
+            );
+        }
+    } else {
+        label.innerHTML = "退出活动";
+        $(label).removeClass('btn-success')
+        $(label).addClass('btn-danger')
+        label.onclick = function(){
+            $.post(
+                    "/partner/index.php/Home/Activity/exitActivity",
+                    {activity_id:activity_id},
+                    function(data){
+                        if(data){
+                            location.reload();
+                        }else{
+                            alert("退出失败！");
+                        }
+                    }
+            );
+        }
+    }
+</script>
 </body>
 </html>
