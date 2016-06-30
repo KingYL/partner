@@ -77,7 +77,10 @@ class ActivityController extends CommonController {
         $this->assign("user",$userInfo);
 
         $activityTable = M("activity");
-        $list = $activityTable->order("post_time desc")->page($_GET['p'].',5')->select();
+		$page = I('page');
+		if (!isset($page))
+			$page = 0;
+        $datas = pageQuery($activityTable->order("post_time desc")->page($_GET['p'].',5'),$page, 6);
         $count = $activityTable->count();
         $page = new Page($count,5);
         $page->setConfig('prev','上一页');
@@ -86,9 +89,9 @@ class ActivityController extends CommonController {
         $page->setConfig('last','尾页');
         $show = $page->show();
 
-        $this->assign("list",$list);
+        $this->assign("list",$datas['datas']);
+		$this->assign('leftPage', $datas['leftPage']);
         $this->assign("page",$show);
-//        var_dump($list);
         $this->display("Index/activity");
     }
 
@@ -109,6 +112,9 @@ class ActivityController extends CommonController {
             $activity["is_enter"] = 0;
         }
         $this->assign("activity",$activity);
+
+        $users = $userModel->getUserInActivity($activity["activity_id"]);
+        $this->users = $users;
         $this->display("Index/activity_unit");
     }
 

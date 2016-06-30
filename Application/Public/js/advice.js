@@ -65,47 +65,72 @@ function applyService(){
     );
 }
 
-function getMyDoctors(){
+function getMyDoctors(page){
+	if (page == null)
+		page = 0;
     $.post(
         "../User/getMyRelations",
-        {type:"医生"},
+        {type:"医生", page: page},
         function(data){
             var doctors = document.getElementById("myDoctors");
             doctors.innerHTML = "";
-            for(var i = 0; i < data.length; i++) {
-                var doctorUnit = getDoctorUnit(data[i]["uid"],data[i]["icon_url"],data[i]["name"],data[i]["identify"],data[i]["sign"],"查看该医生详情>>",null);
+			var doctorDatas = data['datas'];
+            for(var i = 0; i < doctorDatas.length; i++) {
+                var doctorUnit = getDoctorUnit(doctorDatas[i]["uid"],doctorDatas[i]["icon_url"],
+					doctorDatas[i]["name"], doctorDatas[i]["identify"], doctorDatas[i]["sign"],"查看该医生详情>>",null);
                 doctors.appendChild(doctorUnit);
             }
+			var currentPage = page;
+			var leftPage = data['leftPage'];
+			appendPage(currentPage, leftPage, "getMyDoctors", 
+				$('#doctorsPage'));
         }
     );
 }
 
-function getMyCoaches(){
+
+function getMyCoaches(page){
+	if (page == null)
+		page = 0;
     $.post(
         "../User/getMyRelations",
-        {type:"教练"},
+        {type:"教练", page: page},
         function(data){
             var coaches = document.getElementById("myCoaches");
             coaches.innerHTML = "";
-            for(var i = 0; i < data.length; i++) {
-                var coachUnit = getDoctorUnit(data[i]["uid"],data[i]["icon_url"],data[i]["name"],data[i]["identify"],data[i]["sign"],"查看该医生详情>>",null);
+			var doctorDatas = data['datas'];
+            for(var i = 0; i < doctorDatas.length; i++) {
+                var coachUnit = getDoctorUnit(doctorDatas[i]["uid"], doctorDatas[i]["icon_url"], 
+					doctorDatas[i]["name"],doctorDatas[i]["identify"],doctorDatas[i]["sign"],"查看该教练详情>>",null);
                 coaches.appendChild(coachUnit);
             }
+			var currentPage = page;
+			var leftPage = data['leftPage'];
+			appendPage(currentPage, leftPage, "getMyCoaches", 
+				$('#coachPage'));
         }
     );
 }
 
-function getMyQuestions(){
+function getMyQuestions(page){
+	if (page == null)
+		page = 0;
     $.post(
         "getQuestions",
-        {},
+        {page:page},
         function(data){
             var myQuestions = document.getElementById("myQuestions");
             myQuestions.innerHTML = "";
-            for(var i = 0; i < data.length; i++){
-                var questionUnit = getQuestionUnit(data[i]["title"],data[i]["content"],data[i]["time"]);
+			var questionDatas = data['datas'];
+            for(var i = 0; i < questionDatas.length; i++){
+                var questionUnit = getQuestionUnit(questionDatas[i]["title"], questionDatas[i]["content"], 
+					questionDatas[i]["time"]);
                 myQuestions.appendChild(questionUnit);
             }
+			var currentPage = page;
+			var leftPage = data['leftPage'];
+			appendPage(currentPage, leftPage, "getMyQuestions", 
+				$('#questionPage'));
         }
     );
 }
@@ -155,17 +180,26 @@ function question(){
 }
 
 function getAdvices(){
+	var page = getParam("page");
+	if (page == null)
+		page = 0;
     $.post(
         "getAdvices",
-        {},
+        {page: page},
         function(data){
             console.log(data);
             var advices = document.getElementById("advices");
             advices.innerHTML = "";
-            for(var i = 0; i < data.length; i++){
-                var adviceUnit = getAdviceUnit(data[i]["title"],data[i]["content"],data[i]["name"],data[i]["identify"],data[i]["time"]);
+			var adviceDatas = data['datas'];
+            for(var i = 0; i < adviceDatas.length; i++){
+                var adviceUnit = getAdviceUnit(adviceDatas[i]["title"], adviceDatas[i]["content"], 
+					adviceDatas[i]["name"], adviceDatas[i]["identify"], adviceDatas[i]["time"]);
                 advices.appendChild(adviceUnit);
             }
+			var currentPage = page;
+			var leftPage = data['leftPage'];
+			appendPage(currentPage, leftPage, "getAdvices", 
+				$('#advicePage'));
         }
     );
 }

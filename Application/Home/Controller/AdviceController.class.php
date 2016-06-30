@@ -2,6 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 use Home\Model\UserModel;
+
 class AdviceController extends Controller {
     public function index(){
         $userModel = new UserModel();
@@ -17,7 +18,11 @@ class AdviceController extends Controller {
     public function getQuestions(){
         $questionTable = M("question");
         $questionCond["uid"] = session("userId");
-        $this->ajaxReturn($questionTable->where($questionCond)->select());
+		$page = I('page');
+		if (!isset($page))
+			$page = 0;
+		$result = pageQuery($questionTable->where($questionCond), $page, 10);
+        $this->ajaxReturn($result);
     }
 
     public function getServiceQuestions(){
@@ -37,8 +42,13 @@ class AdviceController extends Controller {
     public function getAdvices(){
         $adviceTable = M("advice");
         $condition["to_user"] = session("userId");
-        $advices = $adviceTable->query("SELECT Q.title,A.content,U.name,U.identify,A.time FROM advice as A JOIN question as Q ON A.qid=Q.qid JOIN user as U ON A.from_user=U.uid WHERE A.to_user=".session("userId"));
-        $this->ajaxReturn($advices);
+		$page = I('page');
+		if (!isset($page))
+			$page = 0;
+		$query = "SELECT Q.title,A.content,U.name,U.identify,A.time FROM advice as A JOIN 
+			question as Q ON A.qid=Q.qid JOIN user as U ON A.from_user=U.uid WHERE A.to_user=".session("userId");
+        $advices = pageQueryRaw($adviceTable, $query, $page, 10);
+		$this->ajaxReturn($advices);
     }
 
     public function question(){

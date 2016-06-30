@@ -12,7 +12,8 @@
         function setCookie() {
             document.cookie = "userId={$user.uid}";
             var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
-            nav.setAttribute("class", nav.getAttribute("class").concat(" active"))
+            nav.setAttribute("class", nav.getAttribute("class").concat(" active"));
+            console.log(nav);
         }
     </script>
 </head>
@@ -36,53 +37,24 @@
             </div>
             <hr>
             <div style="color: #7aa92f;margin-top: -10px;">
-                <p>开始时间：{$activity.begin_time}</p>
-                <p>结束时间：{$activity.end_time}</p>
+                <p>开始时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['begin_time']))) ?></p>
+                <p>结束时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['end_time']))) ?></p>
             </div>
-            <p style="font-size: 1.2em;">&nbsp&nbsp&nbsp&nbsp{$activity.content}</p>
+            <p style="font-size: 1.5em; margin: 20px 0px">&nbsp&nbsp&nbsp&nbsp{$activity.content}</p>
 
-            <div style="float: right;">
-                <button id="{$activity.activity_id}" style="background-color: #78be09;color: white">
+            <div style="display:flex; justify-content:center;">
+                <button id="{$activity.activity_id}" class="btn btn-success" style="width: 40%; margin: 20px">
                     {$activity.is_enter}
                 </button>
-                <script>
-                    var label = document.getElementById("{$activity.activity_id}");
-                    var activity_id = "{$activity.activity_id}";
-                    if (label.innerHTML == 0) {
-                        label.innerHTML = "点击参加";
-                        label.onclick = function(){
-                            $.post(
-                                    "/partner/index.php/Home/Activity/enterActivity",
-                                    {activity_id:activity_id},
-                                    function(data){
-                                        if(data){
-                                            location.reload();
-                                        }else{
-                                            alert("参与失败！");
-                                        }
-                                    }
-                            );
-                        }
-                    } else {
-                        label.innerHTML = "退出活动";
-                        label.style.backgroundColor = "#ccc";
-                        label.onclick = function(){
-                            $.post(
-                                    "/partner/index.php/Home/Activity/exitActivity",
-                                    {activity_id:activity_id},
-                                    function(data){
-                                        if(data){
-                                            location.reload();
-                                        }else{
-                                            alert("参与失败！");
-                                        }
-                                    }
-                            );
-                        }
-                    }
-                </script>
             </div>
-            <div class="clearfix"></div>
+
+            <volist name="users" id="user" offset="0" length='10'>
+                <a href="../../../User/user/userId/{$user.uid}">
+                    <img src="__PUBLIC__/data/{$user.avatar}" alt="" style="display:inline-block;border-radius:50px" width="40px" height="40px" >
+                </a>
+            </volist>
+
+            <p style="text-align:right">{:count($users) > 10 ? '等' : '共'} {:count($users)} 人参与</p>
         </div>
 
     </div>
@@ -99,5 +71,45 @@
 <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
 <script src="__PUBLIC__/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+<script>
+    var label = document.getElementById("{$activity.activity_id}");
+    var activity_id = "{$activity.activity_id}";
+    if (label.innerHTML == 0) {
+        label.innerHTML = "点击参加";
+        $(label).removeClass('btn-danger')
+        $(label).addClass('btn-success')
+        label.onclick = function(){
+            console.log('click');
+            $.post(
+                    "/partner/index.php/Home/Activity/enterActivity",
+                    {activity_id:activity_id},
+                    function(data){
+                        if(data){
+                            location.reload();
+                        }else{
+                            alert("参与失败！");
+                        }
+                    }
+            );
+        }
+    } else {
+        label.innerHTML = "退出活动";
+        $(label).removeClass('btn-success')
+        $(label).addClass('btn-danger')
+        label.onclick = function(){
+            $.post(
+                    "/partner/index.php/Home/Activity/exitActivity",
+                    {activity_id:activity_id},
+                    function(data){
+                        if(data){
+                            location.reload();
+                        }else{
+                            alert("退出失败！");
+                        }
+                    }
+            );
+        }
+    }
+</script>
 </body>
 </html>
