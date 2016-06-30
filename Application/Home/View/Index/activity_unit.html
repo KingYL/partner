@@ -12,7 +12,8 @@
         function setCookie() {
             document.cookie = "userId={$user.uid}";
             var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
-            nav.setAttribute("class", nav.getAttribute("class").concat(" active"))
+            nav.setAttribute("class", nav.getAttribute("class").concat(" active"));
+            console.log(nav);
         }
     </script>
 </head>

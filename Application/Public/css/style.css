@@ -5,12 +5,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 .main {
     margin: 25px;
+    min-height: 30em;
 }
 
 .cntnt-img {
     min-height: 150px;
     content: '';
-    background: url(../images/img1.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 
@@ -106,6 +106,7 @@ ul {
 }
 #navbar-nav-user {
     float: right;
+    list-style: none;
 }
 .navbar-default {
     background: none;
@@ -485,8 +486,7 @@ span.menu2 {
 
 .title {
     padding: 15px;
-    font-weight: bolder;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 .title label {
@@ -750,21 +750,21 @@ input.date {
 
 /*-- activity--*/
 .announce {
-    height: 400px;
+    max-height: 300px;
     background-color: #dafaa6;
     border: 1px solid #dfffa8;
     border-radius: 10px;
     margin-top: 35px;
     padding: 0;
+    float: right;
 }
 
 .announce .title {
-    background: url("../images/green.png");
-    color: white;
+    color: #1B5D1C;
     font-weight: bold;
     font-family: "楷体";
     width: 100%;
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
 }
 
@@ -789,16 +789,18 @@ input.date {
 
 .activity {
     border-radius: 10px;
+    min-height: 15em;
 }
 
 .activity-img {
     display: inline-block;
     margin: 10px;
+    line-height: 100%;
 }
 
 .activity-img img {
-    height: 100px;
-    width: 200px;
+    height: 100%;
+    width: 168px;
     border-radius: 10px;
 }
 
@@ -806,12 +808,22 @@ input.date {
     display: inline-block;
     margin: 10px;
     width: 70%;
-    height: 100px;
     position: absolute;
-    background-color: #f1f1f1;
-    border-radius: 10px;
 }
 
+.activity-meta {
+    color: grey;
+}
+.activity-detail {
+
+}
+.date-limit {
+
+}
+.activity-title {
+    padding-bottom: 5px;
+    font-size: 2em;
+}
 .activity-content {
     height: 100px;
     float: left;
@@ -824,7 +836,6 @@ input.date {
 }
 
 .activity-content p {
-    padding-left: 20px;
 }
 
 .activity-content a {
@@ -849,6 +860,32 @@ input.date {
 .activity-state p {
 
 }
+
+#hot-activity-list {
+    margin: 0px auto;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+}
+
+#hot-activity-list li {
+    width: 100%;
+    padding: 8px 20px;
+}
+#hot-activity-list li >a{
+    text-decoration: none;
+    color: #6D8E38
+}
+
+#hot-activity-list li:hover >a {
+    color: white;
+}
+#hot-activity-list li:hover {
+    background-color: #91dc09;
+}
+
+
+
 
 /*-- //activity--*/
 
@@ -1261,4 +1298,14 @@ ul.web-nav li {
 
 .modal-body p {
     font-size: 1.1em;
+}
+/*-- //modal --*/
+
+.first-letter-para:first-letter {
+    font-size: +2em;
+}
+
+.hr-thin {
+    margin: 2px auto;
+
 }

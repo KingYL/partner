@@ -15,11 +15,12 @@
         function setCookie(){
             document.cookie = "userId={$user.uid}";
             var nav = document.getElementsByClassName("hvr-bounce-to-bottom")[2];
-            nav.setAttribute("class",nav.getAttribute("class").concat(" active"))
+            nav.setAttribute("class",nav.getAttribute("class").concat(" active"));
+            console.log(nav);
         }
     </script>
 </head>
-<body onload="setCookie()"><!-- header -->
+<body><!-- header -->
 <include file="Application/Public/tpl/header.html" />
 <!-- //header -->
 <div class="main" style="margin-top: 130px">
@@ -27,14 +28,29 @@
         <div class="col-md-3 announce">
             <!-- 公告-->
             <div class="title">
-                <p>公告</p>
+                <p>热门活动</p>
             </div>
             <hr>
-            <marquee direction="up" height="300" scrollamount="1" scrolldelay="100" onMouseOver="this.scrollDelay=500" onMouseOut="this.scrollDelay=1">
+            <!-- <marquee direction="up" height="320" scrollamount="40" scrolldelay="500" onMouseOver="this.scrollDelay=1000" onMouseOut="this.scrollDelay=500">
                 <ol style="margin: 0;padding: 0 15px;font-size: 1.2em;">
                     <u>&nbsp&nbsp&nbsp&nbsp“伙伴”系统正式上线了！！！小伙伴们快来看啊！！！！有健康管理：运动、身体健康（如心率、血压等）、睡眠等；活动管理：发布、修改、删除、参与等。</u>
                 </ol>
-            </marquee>
+            </marquee> -->
+            <ul id="hot-activity-list">
+              <li>
+                  <a href="#">
+                    南京栖霞山跑步活动
+                    </a>
+              </li>
+              <li>
+                  <a href="#">南大鼓楼校区游街</a>
+              </li>
+              <li>
+                  <a href="#">地球毁灭纪念活动</a>
+              </li>
+              
+              
+            </ul>
         </div>
 
 
@@ -43,13 +59,24 @@
 
             <volist name="list" id="vo" class="activities">
                 <div class="activity">
-                    <div class="activity-img">
-                        <a href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}"><img src="__PUBLIC__/data/activity/{$vo.img_url}" alt="浏览器不支持"></a>
-                    </div>
+                    <a class="activity-img" href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}"><img  src="__PUBLIC__/data/activity/{$vo.img_url}" alt="浏览器不支持"></a>
                     <div class="activity-block">
+                        <div class="activity-title">
+                            <a href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}">
+                                <h4>{$vo.title}</h4>
+                            </a>
+                        </div>
+                        <hr class="hr-thin" />
+                        <div class="activity-meta">
+                            <span>发布时间: 2015-10-16 </span>
+                            <span>活动方：官方</span>
+                        </div>
+                        <hr class="hr-thin" />
                         <div class="activity-content" style="width: 80%;">
-                            <a href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}"><h4>{$vo.title}</h4></a>
-                            <p>{$vo.content}</p>
+                            <p class="first-letter-para">{$vo.content|htmlspecialchars}
+                            <a class="activity-detail-btn btn" href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}">查看详情</a>
+                            </p>
+
                         </div>
                         <!--<div class="clearfix"></div>-->
                         <div class="activity-state">
@@ -64,8 +91,12 @@
                                     }
                                 </script>
                                 <label>{$vo.enter_amount}人参与</label>
+
                             </div>
                         </div>
+                    </div>
+                    <div class="date-limit">
+                            <p>截止时间至：<span style="color:red;">2015-10-10 10:10</span></p>
                     </div>
                 </div>
 
@@ -84,7 +115,6 @@
 
 <!-- for bootstrap working -->
 <script>
-	$(document).ready(function() {
 	$(document).ready(function() {
 		var currentPage = getParam('page');
 		if (currentPage == null)
