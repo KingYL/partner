@@ -136,8 +136,6 @@ ul {
     background: #477103;
 }
 
-
-
 /* Bounce To Bottom */
 .hvr-bounce-to-bottom {
     display: inline-block;
@@ -176,10 +174,12 @@ ul {
     transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+	border-radius:5px;
 }
 
 .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
     color: white;
+	border-radius:5px;
 }
 
 .hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
@@ -187,6 +187,7 @@ ul {
     transform: scaleY(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	border-radius:5px;
 }
 
 .dropdown button{

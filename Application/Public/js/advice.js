@@ -65,6 +65,13 @@ function applyService(){
     );
 }
 
+function getUserDetail(uid) {
+	if (uid == null)
+		uid = 1;
+	alert(window.location.host);/*
+	window.location.href = window.location.host + "/partner/index.php/Home/User/user/userId/" + uid;*/
+}
+
 function getMyDoctors(page){
 	if (page == null)
 		page = 0;
@@ -77,7 +84,7 @@ function getMyDoctors(page){
 			var doctorDatas = data['datas'];
             for(var i = 0; i < doctorDatas.length; i++) {
                 var doctorUnit = getDoctorUnit(doctorDatas[i]["uid"],doctorDatas[i]["icon_url"],
-					doctorDatas[i]["name"], doctorDatas[i]["identify"], doctorDatas[i]["sign"],"查看该医生详情>>",null);
+					doctorDatas[i]["name"], doctorDatas[i]["identify"], doctorDatas[i]["sign"],"查看该医生详情>>",getUserDetail);
                 doctors.appendChild(doctorUnit);
             }
 			var currentPage = page;
