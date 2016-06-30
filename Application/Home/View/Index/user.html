@@ -74,7 +74,7 @@
                     <div class="tab-pane fade" id="user_icon" style="text-align: center">
                         <form action="{:U('User/uploadIcon')}" method="post" enctype="multipart/form-data">
                             <div class="user-img">
-                                <img src="__PUBLIC__/data/{$user.icon_url}" alt="">
+                                <img src="{$user.icon_url}" alt="">
                             </div>
                             <div>
                                 <input type="file" name="icon_url">
