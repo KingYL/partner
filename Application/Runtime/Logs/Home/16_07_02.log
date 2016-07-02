@@ -1,0 +1,602 @@
+[ 2016-07-02T09:55:13+08:00 ] ::1 /partner/index.php/Home/Advice/index.html?page=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011479s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0029s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+NOTIC: [8] Undefined index: identify D:\wamp\www\partner\Application\Home\Controller\AdviceController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 17 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 66 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.233300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.233987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016520s ]
+
+[ 2016-07-02T09:55:15+08:00 ] ::1 /partner/index.php/Home/User/getMyServiceUsers
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+SQL: PRAGMA table_info( relation ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM relation WHERE service_id = null  [ RunTime:0.0003s ]
+
+[ 2016-07-02T09:55:16+08:00 ] ::1 /partner/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000876s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 13 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 85 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2016-07-02T09:55:17+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002788s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000810s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.329628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.330056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002324s ]
+
+[ 2016-07-02T09:55:17+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0011s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0004s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000475s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001493s ]
+
+[ 2016-07-02T09:55:33+08:00 ] ::1 /partner/index.php/Home/Advice/index.html?page=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+NOTIC: [8] Undefined index: identify D:\wamp\www\partner\Application\Home\Controller\AdviceController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 17 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 66 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2016-07-02T09:55:33+08:00 ] ::1 /partner/index.php/Home/User/getMyServiceUsers
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+SQL: PRAGMA table_info( relation ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM relation WHERE service_id = null  [ RunTime:0.0003s ]
+
+[ 2016-07-02T09:55:35+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0009s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001687s ]
+
+[ 2016-07-02T09:55:45+08:00 ] ::1 /partner/index.php/Home/Login/signOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+
+[ 2016-07-02T09:55:45+08:00 ] ::1 /partner/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2016-07-02T09:55:46+08:00 ] ::1 /partner/index.php/Home/Login/signIn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: SELECT * FROM user WHERE id = '1016990109'  [ RunTime:0.0003s ]
+
+[ 2016-07-02T09:55:46+08:00 ] ::1 /partner/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2016-07-02T09:55:48+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = 1  [ RunTime:0.0002s ]
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2016-07-02T10:13:16+08:00 ] ::1 /partner/index.php/Home/Advice/index.html?page=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025814s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0197s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0004s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+NOTIC: [8] Undefined index: identify D:\wamp\www\partner\Application\Home\Controller\AdviceController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000865s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 17 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 66 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.717642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.718083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.051476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.034152s ]
+
+[ 2016-07-02T10:13:20+08:00 ] ::1 /partner/index.php/Home/User/getMyServiceUsers
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: PRAGMA table_info( relation ) [ RunTime:0.0014s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM relation WHERE service_id = null  [ RunTime:0.0003s ]
+
+[ 2016-07-02T10:13:20+08:00 ] ::1 /partner/index.php/Home/Advice/index.html?page=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+NOTIC: [8] Undefined index: identify D:\wamp\www\partner\Application\Home\Controller\AdviceController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 17 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 66 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\364492a12cac26ca89ac00716a2578bb.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2016-07-02T10:13:20+08:00 ] ::1 /partner/index.php/Home/User/getMyServiceUsers
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: PRAGMA table_info( relation ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM relation WHERE service_id = null  [ RunTime:0.0003s ]
+
+[ 2016-07-02T10:13:25+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.2166s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2016-07-02T10:13:33+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2016-07-02T10:15:09+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0006s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2016-07-02T10:16:21+08:00 ] ::1 /partner/index.php/Home/Activity/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0007s ]
+SQL: PRAGMA table_info( user ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM user WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 33 行.
+SQL: PRAGMA table_info( base_info ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM base_info WHERE uid = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 38 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 39 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 40 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\partner\Application\Home\Model\UserModel.class.php 第 43 行.
+SQL: PRAGMA table_info( activity ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM activity ORDER BY post_time desc LIMIT 5 OFFSET 0   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: totalNum D:\wamp\www\partner\Application\Home\Common\function.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM activity LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: uid D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 16 行.
+NOTIC: [8] Undefined index: icon_url D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 58 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\partner\Application\Runtime\Cache\Home\d9fb5da76bc6443c02a1754cc186b79a.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001140s ]
+

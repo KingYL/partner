@@ -121,7 +121,7 @@
                         </div>
                         <hr class="hr-thin" />
                         <div class="activity-meta">
-                            <span>发布时间: 2015-10-16 </span>
+                            <span>发布时间: <?php  echo date("Y-m-d H:i", strtotime($vo['post_time']))?> </span>
                             <span>活动方：官方</span>
                         </div>
                         <hr class="hr-thin" />
@@ -151,9 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="date-limit">
-                            <p>截止时间至：<span style="color:red;">2015-10-10 10:10</span></p>
-                    </div>
+                    
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
             <div class="clearfix"></div>
 			<nav id="page" style="float:right"></nav>
