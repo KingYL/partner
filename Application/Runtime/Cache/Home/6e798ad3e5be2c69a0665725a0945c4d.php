@@ -94,7 +94,7 @@
 
 <div class="main" style="margin-top: 130px">
     <div style="display:flex; justify-content: center">
-        <img src="/partner/Application/Public/data/<?php echo ($otherUser["icon_url"]); ?>" alt="" style="display:block;border-radius:50px" width="100px" height="100px" >
+        <img src="<?php echo ($otherUser["icon_url"]); ?>" alt="" style="display:block;border-radius:50px" width="100px" height="100px" >
     </div>
     <div style="display:flex; justify-content:center; align-items: center">
         <div>
@@ -143,7 +143,7 @@
                 <ul class="web-nav">
                     <li><a href="<?php echo U('Index/health');?>">健康管理</a></li>
                     <li><a href="<?php echo U('Index/activity');?>">活动中心</a></li>
-                    <li><a href="<?php echo U('Index/advice');?>">建议管理</a></li>
+                    <li><a href="<?php echo U('Advice/index');?>">建议管理</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
@@ -156,7 +156,7 @@
                 <h4>友情链接</h4>
                 <ul>
                     <li><a href="http://www.codoon.com" target="_blank"><!-- <img class="friend-logo" src="/partner/Application/Public/images/gudong-logo.jpg" alt="咕咚"/> -->咕咚网</a></li>
-                    <li><a href="http://www.dongqil.com/"><!-- <img class="friend-logo" src="/partner/Application/Public/images/quyundong-logo.png" > -->去运动网</a></li>
+                    <li><a href="http://www.dongqil.com/" target="_blank"><!-- <img class="friend-logo" src="/partner/Application/Public/images/quyundong-logo.png" > -->去运动网</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">

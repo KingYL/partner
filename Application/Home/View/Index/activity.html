@@ -48,8 +48,8 @@
               <li>
                   <a href="#">地球毁灭纪念活动</a>
               </li>
-              
-              
+
+
             </ul>
         </div>
 
@@ -59,7 +59,7 @@
 
             <volist name="list" id="vo" class="activities">
                 <div class="activity">
-                    <a class="activity-img" href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}"><img  src="__PUBLIC__/data/activity/{$vo.img_url}" alt="浏览器不支持"></a>
+                    <a class="activity-img" href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}"><img  src="__PUBLIC__/data/activity/{$vo.img_url}" alt="浏览器不支持" style="height:100px"></a>
                     <div class="activity-block">
                         <div class="activity-title">
                             <a href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}">
@@ -73,9 +73,20 @@
                         </div>
                         <hr class="hr-thin" />
                         <div class="activity-content" style="width: 80%;">
-                            <p class="first-letter-para">{$vo.content|htmlspecialchars}
+                            <p class="first-letter-para" style="text-overflow: clip ellipsis; max-height:100px">
+                                <?php
+                                    $content = $vo['content'];
+                                    $len = 100;
+                                    if (strlen($content)>$len*2) {
+                                        $content = mb_substr($content, 0, $len, 'utf-8');
+                                        echo $content."……";
+                                    }else {
+                                        echo $content;
+                                    }
+                                ?>
                             <a class="activity-detail-btn btn" href="/partner/index.php/Home/Activity/activity/ac/{$vo.activity_id}">查看详情</a>
-                            </p>
+                        </p>
+
 
                         </div>
                         <!--<div class="clearfix"></div>-->
@@ -102,7 +113,7 @@
 
             </volist>
             <div class="clearfix"></div>
-			<nav id="page" style="float:right"></nav> 
+			<nav id="page" style="float:right"></nav>
         </div>
     </div>
 </div>

@@ -102,8 +102,8 @@
               <li>
                   <a href="#">地球毁灭纪念活动</a>
               </li>
-              
-              
+
+
             </ul>
         </div>
 
@@ -112,7 +112,7 @@
             <h3 style="padding: 0 10px;font-weight: bold">最新活动</h3>
 
             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="activity">
-                    <a class="activity-img" href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>"><img  src="/partner/Application/Public/data/activity/<?php echo ($vo["img_url"]); ?>" alt="浏览器不支持"></a>
+                    <a class="activity-img" href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>"><img  src="/partner/Application/Public/data/activity/<?php echo ($vo["img_url"]); ?>" alt="浏览器不支持" style="height:100px"></a>
                     <div class="activity-block">
                         <div class="activity-title">
                             <a href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>">
@@ -126,9 +126,12 @@
                         </div>
                         <hr class="hr-thin" />
                         <div class="activity-content" style="width: 80%;">
-                            <p class="first-letter-para"><?php echo (htmlspecialchars($vo["content"])); ?>
+                            <p class="first-letter-para" style="text-overflow: clip ellipsis; max-height:100px">
+                                <?php
+ $content = $vo['content']; $len = 100; if (strlen($content)>$len*2) { $content = mb_substr($content, 0, $len, 'utf-8'); echo $content."……"; }else { echo $content; } ?>
                             <a class="activity-detail-btn btn" href="/partner/index.php/Home/Activity/activity/ac/<?php echo ($vo["activity_id"]); ?>">查看详情</a>
-                            </p>
+                        </p>
+
 
                         </div>
                         <!--<div class="clearfix"></div>-->
@@ -153,7 +156,7 @@
                     </div>
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
             <div class="clearfix"></div>
-			<nav id="page" style="float:right"></nav> 
+			<nav id="page" style="float:right"></nav>
         </div>
     </div>
 </div>

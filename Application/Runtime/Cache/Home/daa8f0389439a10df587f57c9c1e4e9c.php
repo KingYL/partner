@@ -82,17 +82,16 @@
             <br>
 
             <h3 style="padding: 0 10px;font-weight: bold;color: #78be09"><?php echo ($activity["title"]); ?></h3>
-
-            <p style="text-align: right;color: #636486">发表于 <?php echo ($activity["post_time"]); ?></p>
+            <p style="text-align: right;color: #636486">发表于 <?php echo (date("Y-m-d H:i",strtotime($activity['post_time']))) ?></p>
             <hr>
             <div>
-                <img src="<?php echo ($activity["img_url"]); ?>" alt="图片丢失"
+                <img src="/partner/Application/Public/data/activity/<?php echo ($activity["img_url"]); ?>" alt="图片丢失"
                      style="width: 50%;height: auto;border-radius: 10px">
             </div>
             <hr>
             <div style="color: #7aa92f;margin-top: -10px;">
-                <p>开始时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['begin_time']))) ?></p>
-                <p>结束时间：<?php echo (date("Y-m-d H:m:00",strtotime($activity['end_time']))) ?></p>
+                <p>开始时间：<?php echo (date("Y-m-d H:i",strtotime($activity['begin_time']))) ?></p>
+                <p>结束时间：<?php echo (date("Y-m-d H:i",strtotime($activity['end_time']))) ?></p>
             </div>
             <p style="font-size: 1.5em; margin: 20px 0px">&nbsp&nbsp&nbsp&nbsp<?php echo ($activity["content"]); ?></p>
 
@@ -103,7 +102,7 @@
             </div>
 
             <?php if(is_array($users)): $i = 0; $__LIST__ = array_slice($users,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><a href="../../../User/user/userId/<?php echo ($user["uid"]); ?>">
-                    <img src="/partner/Application/Public/data/<?php echo ($user["avatar"]); ?>" alt="" style="display:inline-block;border-radius:50px" width="40px" height="40px" >
+                    <img src="<?php echo ($user["avatar"]); ?>" alt="" style="display:inline-block;border-radius:50px;margin: 0 10px" width="40px" height="40px" >
                 </a><?php endforeach; endif; else: echo "" ;endif; ?>
 
             <p style="text-align:right"><?php echo count($users) > 10 ? '等' : '共';?> <?php echo count($users);?> 人参与</p>
